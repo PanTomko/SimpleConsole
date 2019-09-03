@@ -1,0 +1,125 @@
+\hypertarget{classsc_1_1_mouse}{}\section{sc\+::Mouse Class Reference}
+\label{classsc_1_1_mouse}\index{sc::Mouse@{sc::Mouse}}
+
+
+{\ttfamily \#include $<$Mouse.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector2_d_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}{Dll\+Export}} bool \mbox{\hyperlink{classsc_1_1_mouse_a55f4069da03cdd14d64c83d668945e9c}{is\+Key\+Pressed}} (Mouse\+Keys key)
+\begin{DoxyCompactList}\small\item\em check if mouse Mouse\+Keys\+:\+: is pressed ( real time ) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector2_d_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}{Dll\+Export}} \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_mouse_ae71bc5e3211e2ba9935e703cc04e7492}{get\+Possition}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse_afdf7d8abef29c10be77ead773f964f4f}{$\sim$\+Mouse}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_single_test_8h_ac612533c84ec9f58274935ca41422bc2}{DllS}} \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} $\ast$ \mbox{\hyperlink{classsc_1_1_mouse_ab5cf94940a8ab2dad32bf298abf69b2d}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ Mouse\+Keys, unsigned char $>$ \mbox{\hyperlink{classsc_1_1_mouse_a9389587000931c81c45eef82921f8491}{keys}}
+\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_mouse_a6148d8e9f122e83d0024ab77523a1e49}{position}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse_a99024d3700d649ae19c1537b42a3e86d}{Mouse}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse_a00f31e6c9784326aaa85a7b406c3a5e1}{Mouse}} (const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&mouse)=delete
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse_a54a8b28933bcd108f09a92c51a50098a}{Mouse}} (const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&\&mouse)=delete
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \& \mbox{\hyperlink{classsc_1_1_mouse_a7595b361d02ffe2bdb658784f0b29a68}{operator=}} (const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&mouse)=delete
+\item 
+\mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \& \mbox{\hyperlink{classsc_1_1_mouse_aa84efee53d6b684486d2edc79f8ea898}{operator=}} (const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&\&mouse)=delete
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_mouse_afdf7d8abef29c10be77ead773f964f4f}\label{classsc_1_1_mouse_afdf7d8abef29c10be77ead773f964f4f}} 
+\index{sc::Mouse@{sc::Mouse}!````~Mouse@{$\sim$Mouse}}
+\index{````~Mouse@{$\sim$Mouse}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{$\sim$Mouse()}{~Mouse()}}
+{\footnotesize\ttfamily Mouse\+::$\sim$\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a99024d3700d649ae19c1537b42a3e86d}\label{classsc_1_1_mouse_a99024d3700d649ae19c1537b42a3e86d}} 
+\index{sc::Mouse@{sc::Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Mouse\+::\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a00f31e6c9784326aaa85a7b406c3a5e1}\label{classsc_1_1_mouse_a00f31e6c9784326aaa85a7b406c3a5e1}} 
+\index{sc::Mouse@{sc::Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily sc\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a54a8b28933bcd108f09a92c51a50098a}\label{classsc_1_1_mouse_a54a8b28933bcd108f09a92c51a50098a}} 
+\index{sc::Mouse@{sc::Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{Mouse()}{Mouse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily sc\+::\+Mouse\+::\+Mouse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&\&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_mouse_ab5cf94940a8ab2dad32bf298abf69b2d}\label{classsc_1_1_mouse_ab5cf94940a8ab2dad32bf298abf69b2d}} 
+\index{sc::Mouse@{sc::Mouse}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} $\ast$ sc\+::\+Mouse\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_ae71bc5e3211e2ba9935e703cc04e7492}\label{classsc_1_1_mouse_ae71bc5e3211e2ba9935e703cc04e7492}} 
+\index{sc::Mouse@{sc::Mouse}!getPossition@{getPossition}}
+\index{getPossition@{getPossition}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{getPossition()}{getPossition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} sc\+::\+Mouse\+::get\+Possition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a55f4069da03cdd14d64c83d668945e9c}\label{classsc_1_1_mouse_a55f4069da03cdd14d64c83d668945e9c}} 
+\index{sc::Mouse@{sc::Mouse}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Mouse\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Keys}]{key }\end{DoxyParamCaption})}
+
+
+
+check if mouse Mouse\+Keys\+:\+: is pressed ( real time ) 
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a7595b361d02ffe2bdb658784f0b29a68}\label{classsc_1_1_mouse_a7595b361d02ffe2bdb658784f0b29a68}} 
+\index{sc::Mouse@{sc::Mouse}!operator=@{operator=}}
+\index{operator=@{operator=}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}}\& sc\+::\+Mouse\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_aa84efee53d6b684486d2edc79f8ea898}\label{classsc_1_1_mouse_aa84efee53d6b684486d2edc79f8ea898}} 
+\index{sc::Mouse@{sc::Mouse}!operator=@{operator=}}
+\index{operator=@{operator=}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}}\& sc\+::\+Mouse\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_mouse}{Mouse}} \&\&}]{mouse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_mouse_a9389587000931c81c45eef82921f8491}\label{classsc_1_1_mouse_a9389587000931c81c45eef82921f8491}} 
+\index{sc::Mouse@{sc::Mouse}!keys@{keys}}
+\index{keys@{keys}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily std\+::map$<$Mouse\+Keys, unsigned char$>$ sc\+::\+Mouse\+::keys}
+
+\mbox{\Hypertarget{classsc_1_1_mouse_a6148d8e9f122e83d0024ab77523a1e49}\label{classsc_1_1_mouse_a6148d8e9f122e83d0024ab77523a1e49}} 
+\index{sc::Mouse@{sc::Mouse}!position@{position}}
+\index{position@{position}!sc::Mouse@{sc::Mouse}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} sc\+::\+Mouse\+::position}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_mouse_8h}{Mouse.\+h}}\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/src/\mbox{\hyperlink{_mouse_8cpp}{Mouse.\+cpp}}\end{DoxyCompactItemize}

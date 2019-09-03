@@ -1,0 +1,177 @@
+\hypertarget{classsc_1_1_console_module_event}{}\section{sc\+::Console\+Module\+Event Class Reference}
+\label{classsc_1_1_console_module_event}\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+
+
+{\ttfamily \#include $<$Console\+Module\+Event.\+h$>$}
+
+Inheritance diagram for sc\+::Console\+Module\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/dc8/classsc_1_1_console_module_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classsc_1_1_console_module_event_af7d5a34f185a7de314197be2dc0d946a}{pool\+Event}} (\mbox{\hyperlink{classsc_1_1_event}{Event}} \&\+\_\+event)
+\begin{DoxyCompactList}\small\item\em fills \mbox{\hyperlink{classsc_1_1_event}{Event}} data if there was any to pool form que, else it returns false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsc_1_1_console_module_event_aaa7265f08800bd58a78cd4482ce285c3}{is\+Valid\+Character}} (const Key \&key)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_module_event_ac33e2f27e2cf1f78e8237eb415a3008b}{read\+Input\+Events}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_console_module_event_a2396c77a93d2cf76588b07ad54579a33}{Console\+Module\+Event}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_console_module_event_a6af22ed48f35271e3f3555c369677481}{$\sim$\+Console\+Module\+Event}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::thread \mbox{\hyperlink{classsc_1_1_console_module_event_a5a09e0aedb260fe975aa9854b278d277}{thread\+\_\+input}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_module_event_a056aa2b523fd96ae69469782035350cb}{process\+Keyboard\+Event}} (const I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD \&record)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_module_event_a1500a488043b4ff64ec003a5a70ea7e3}{process\+Mouse\+Event}} (const I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD \&record)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_module_event_a09b228dceb2e5ad6b0c37827757c0588}{ini}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \mbox{\hyperlink{classsc_1_1_event}{Event}} $>$ \mbox{\hyperlink{classsc_1_1_console_module_event_a0e18979e00b6126df42aed3e5c7331ec}{evets\+\_\+buffer}}
+\item 
+std\+::mutex \mbox{\hyperlink{classsc_1_1_console_module_event_a0b13bccf291012ba88b883c2b07e5b60}{mutex\+\_\+evets\+\_\+buffer}}
+\item 
+H\+A\+N\+D\+LE $\ast$ \mbox{\hyperlink{classsc_1_1_console_module_event_a03489de10c6d5179534696097964de97}{console\+\_\+input\+\_\+buffer}}
+\item 
+D\+W\+O\+RD \mbox{\hyperlink{classsc_1_1_console_module_event_a3712d1634c010fa2abc70e89f6040114}{input\+\_\+count}}
+\item 
+I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD \mbox{\hyperlink{classsc_1_1_console_module_event_adac0f2d84c4028510e249be4f27c9b45}{input\+\_\+buffer}} \mbox{[}254\mbox{]}
+\item 
+std\+::vector$<$ Key $>$ \mbox{\hyperlink{classsc_1_1_console_module_event_a946c2799043de3e6ad0c6c0550bca8d1}{non\+\_\+valid\+\_\+codes}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsc_1_1_console_module_event_aaa98810874c67664127370c7d8dc2ece}{Console}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a2396c77a93d2cf76588b07ad54579a33}\label{classsc_1_1_console_module_event_a2396c77a93d2cf76588b07ad54579a33}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!ConsoleModuleEvent@{ConsoleModuleEvent}}
+\index{ConsoleModuleEvent@{ConsoleModuleEvent}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{ConsoleModuleEvent()}{ConsoleModuleEvent()}}
+{\footnotesize\ttfamily Console\+Module\+Event\+::\+Console\+Module\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a6af22ed48f35271e3f3555c369677481}\label{classsc_1_1_console_module_event_a6af22ed48f35271e3f3555c369677481}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!````~ConsoleModuleEvent@{$\sim$ConsoleModuleEvent}}
+\index{````~ConsoleModuleEvent@{$\sim$ConsoleModuleEvent}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{$\sim$ConsoleModuleEvent()}{~ConsoleModuleEvent()}}
+{\footnotesize\ttfamily Console\+Module\+Event\+::$\sim$\+Console\+Module\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a09b228dceb2e5ad6b0c37827757c0588}\label{classsc_1_1_console_module_event_a09b228dceb2e5ad6b0c37827757c0588}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!ini@{ini}}
+\index{ini@{ini}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{ini()}{ini()}}
+{\footnotesize\ttfamily void sc\+::\+Console\+Module\+Event\+::ini (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_aaa7265f08800bd58a78cd4482ce285c3}\label{classsc_1_1_console_module_event_aaa7265f08800bd58a78cd4482ce285c3}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!isValidCharacter@{isValidCharacter}}
+\index{isValidCharacter@{isValidCharacter}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{isValidCharacter()}{isValidCharacter()}}
+{\footnotesize\ttfamily bool Console\+Module\+Event\+::is\+Valid\+Character (\begin{DoxyParamCaption}\item[{const Key \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_af7d5a34f185a7de314197be2dc0d946a}\label{classsc_1_1_console_module_event_af7d5a34f185a7de314197be2dc0d946a}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!poolEvent@{poolEvent}}
+\index{poolEvent@{poolEvent}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{poolEvent()}{poolEvent()}}
+{\footnotesize\ttfamily bool Console\+Module\+Event\+::pool\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc_1_1_event}{Event}} \&}]{\+\_\+event }\end{DoxyParamCaption})}
+
+
+
+fills \mbox{\hyperlink{classsc_1_1_event}{Event}} data if there was any to pool form que, else it returns false. 
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a056aa2b523fd96ae69469782035350cb}\label{classsc_1_1_console_module_event_a056aa2b523fd96ae69469782035350cb}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!processKeyboardEvent@{processKeyboardEvent}}
+\index{processKeyboardEvent@{processKeyboardEvent}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{processKeyboardEvent()}{processKeyboardEvent()}}
+{\footnotesize\ttfamily void Console\+Module\+Event\+::process\+Keyboard\+Event (\begin{DoxyParamCaption}\item[{const I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a1500a488043b4ff64ec003a5a70ea7e3}\label{classsc_1_1_console_module_event_a1500a488043b4ff64ec003a5a70ea7e3}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!processMouseEvent@{processMouseEvent}}
+\index{processMouseEvent@{processMouseEvent}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{processMouseEvent()}{processMouseEvent()}}
+{\footnotesize\ttfamily void sc\+::\+Console\+Module\+Event\+::process\+Mouse\+Event (\begin{DoxyParamCaption}\item[{const I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_ac33e2f27e2cf1f78e8237eb415a3008b}\label{classsc_1_1_console_module_event_ac33e2f27e2cf1f78e8237eb415a3008b}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!readInputEvents@{readInputEvents}}
+\index{readInputEvents@{readInputEvents}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{readInputEvents()}{readInputEvents()}}
+{\footnotesize\ttfamily void Console\+Module\+Event\+::read\+Input\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_module_event_aaa98810874c67664127370c7d8dc2ece}\label{classsc_1_1_console_module_event_aaa98810874c67664127370c7d8dc2ece}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!Console@{Console}}
+\index{Console@{Console}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{Console}{Console}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classsc_1_1_console}{Console}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a03489de10c6d5179534696097964de97}\label{classsc_1_1_console_module_event_a03489de10c6d5179534696097964de97}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!console\_input\_buffer@{console\_input\_buffer}}
+\index{console\_input\_buffer@{console\_input\_buffer}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{console\_input\_buffer}{console\_input\_buffer}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE$\ast$ sc\+::\+Console\+Module\+Event\+::console\+\_\+input\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a0e18979e00b6126df42aed3e5c7331ec}\label{classsc_1_1_console_module_event_a0e18979e00b6126df42aed3e5c7331ec}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!evets\_buffer@{evets\_buffer}}
+\index{evets\_buffer@{evets\_buffer}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{evets\_buffer}{evets\_buffer}}
+{\footnotesize\ttfamily std\+::queue$<$\mbox{\hyperlink{classsc_1_1_event}{Event}}$>$ sc\+::\+Console\+Module\+Event\+::evets\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_adac0f2d84c4028510e249be4f27c9b45}\label{classsc_1_1_console_module_event_adac0f2d84c4028510e249be4f27c9b45}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!input\_buffer@{input\_buffer}}
+\index{input\_buffer@{input\_buffer}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{input\_buffer}{input\_buffer}}
+{\footnotesize\ttfamily I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+RD sc\+::\+Console\+Module\+Event\+::input\+\_\+buffer\mbox{[}254\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a3712d1634c010fa2abc70e89f6040114}\label{classsc_1_1_console_module_event_a3712d1634c010fa2abc70e89f6040114}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!input\_count@{input\_count}}
+\index{input\_count@{input\_count}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{input\_count}{input\_count}}
+{\footnotesize\ttfamily D\+W\+O\+RD sc\+::\+Console\+Module\+Event\+::input\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a0b13bccf291012ba88b883c2b07e5b60}\label{classsc_1_1_console_module_event_a0b13bccf291012ba88b883c2b07e5b60}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!mutex\_evets\_buffer@{mutex\_evets\_buffer}}
+\index{mutex\_evets\_buffer@{mutex\_evets\_buffer}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{mutex\_evets\_buffer}{mutex\_evets\_buffer}}
+{\footnotesize\ttfamily std\+::mutex sc\+::\+Console\+Module\+Event\+::mutex\+\_\+evets\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a946c2799043de3e6ad0c6c0550bca8d1}\label{classsc_1_1_console_module_event_a946c2799043de3e6ad0c6c0550bca8d1}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!non\_valid\_codes@{non\_valid\_codes}}
+\index{non\_valid\_codes@{non\_valid\_codes}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{non\_valid\_codes}{non\_valid\_codes}}
+{\footnotesize\ttfamily std\+::vector$<$Key$>$ sc\+::\+Console\+Module\+Event\+::non\+\_\+valid\+\_\+codes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_module_event_a5a09e0aedb260fe975aa9854b278d277}\label{classsc_1_1_console_module_event_a5a09e0aedb260fe975aa9854b278d277}} 
+\index{sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}!thread\_input@{thread\_input}}
+\index{thread\_input@{thread\_input}!sc::ConsoleModuleEvent@{sc::ConsoleModuleEvent}}
+\subsubsection{\texorpdfstring{thread\_input}{thread\_input}}
+{\footnotesize\ttfamily std\+::thread sc\+::\+Console\+Module\+Event\+::thread\+\_\+input}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_console_module_event_8h}{Console\+Module\+Event.\+h}}\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/src/\mbox{\hyperlink{_console_module_event_8cpp}{Console\+Module\+Event.\+cpp}}\end{DoxyCompactItemize}

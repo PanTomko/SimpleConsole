@@ -1,0 +1,624 @@
+\hypertarget{_keyboard_event_8h}{}\section{C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\+Keyboard\+Event.h File Reference}
+\label{_keyboard_event_8h}\index{C:/Users/Pan Tomko/Desktop/Projects/SimpleConsole/SimpleConsole/include/KeyboardEvent.h@{C:/Users/Pan Tomko/Desktop/Projects/SimpleConsole/SimpleConsole/include/KeyboardEvent.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsc_1_1_keyboard_event}{sc\+::\+Keyboard\+Event}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesc}{sc}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_keyboard_event_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}{Dll\+Export}}~\+\_\+\+\_\+declspec( dllexport )
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a72ab321314dd60c96b4275655828e00a}{Null}} = 0x0000
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aabddd589ce7fd3d829e15265d92dbedc}{Shift}} = 0x0010
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a240c721e2d4ec4b7b20dabe1847c2fe0}{Numlock}} = 0x0020
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aaf79f96b085258f109c12830b8f09e85}{Capslock}} = 0x0080
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a0c37e8c9e314fff323a78db5f11fbde8}{Scroll\+Lock}} = 0x0040
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ac807c637c522e2e41feb9a43eb9feec5}{Enhanced}} = 0x0100
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a855c533a7fe3079c501c82baa9e58576}{Left\+Alt}} = 0x0002
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_af41e2594ff18adfe463dfd4e8affec34}{Right\+Alt}} = 0x0001
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a35b4a8cf67a4919958bc4955ff34f412}{Left\+Ctrl}} = 0x0008
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ab32fb9d57455c03e9f28cf7d73d52026}{Undefined}} = 0x07
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_abd87ebc94f876afe157e6aba00ea0c14}{Backspace}} = 0x08
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8fe90f207489a0982422faf42ad59f1c}{Tab}} = 0x09
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ad66a34766cc32d648b974bdb475c5583}{Clear}} = 0x0C
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ad1402ace29cb6b74f0236f6f2ac8a8bb}{Enter}} = 0x0D
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8c72c82f024ad6af2e49918de816504f}{Ctrl}} = 0x11
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a7d99a6d1f8766d52346b73a4a6f940b6}{Alt}} = 0x12
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a6133f16dc6d09a0c5cc8822ab1465f41}{Pause}} = 0x13
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a039b98dabf7e7ae40e1e7e46a7c39def}{Caps\+Lock}} = 0x14
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_acab3ae4e298cf3732b3afd779bf3b67b}{Kana}} = 0x15
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aa01f53f95b4b05f2c5713afb71b947ba}{Escape}} = 0x1B
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ab11a1dda34491acff014ddfc9e6bafb8}{Space}} = 0x20
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a5edacb1fb6eb187d48bad49f48f03fde}{Page\+UP}} = 0x21
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aefeee4be5a06079b7d865385ae909840}{Page\+Down}} = 0x22
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a3984936eef37a8ac0ba1cd004d546a4d}{End}} = 0x23
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a636ca6b95f5129da8b6de675e1793b9b}{Home}} = 0x24
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_adfbac2cffa806bef2ee0a77bec1b4acb}{Left\+Arrow}} = 0x25
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ab14ff5f419018cba336a1127a3b9ff98}{Up\+Arrow}} = 0x26
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ab26ebaca3d64cfdb31cb55fb61bf30fa}{Right\+Arrow}} = 0x27
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a5de098cb7b4e33c72a4bd44289e63657}{Down\+Arrow}} = 0x28
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8c2abb54c6400be51f883d1126f23fd0}{Select}} = 0x29
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ad5ab55d263c1baf5e0ec9fcd3240aa3c}{Print}} = 0x2A
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_acfd6429a432b4e58d8a961eac81130e8}{Print\+Sreen}} = 0x2C
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8c1f14f07c9eedcbbb2cc61988030646}{Insert}} = 0x2D
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_afc275d75a75bff6fcde31a81f263edd2}{Delete}} = 0x2E
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a9aa721042acde3b02cb77a4392d02d3b}{Help}} = 0x2F
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_af50fddc42c748e727e5910ae19becdee}{Num0}} = 0x30
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aebca82ac6bcc71c096ac586b94ff6152}{Num1}} = 0x31
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a84ee590eacb6b7022432ddd3fa82b9d3}{Num2}} = 0x32
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8ca374a2c8c42489bbac36cf0f11fe2d}{Num3}} = 0x33
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a346e1ea95fd5a707890617aa70ae5dbc}{Num4}} = 0x34
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a24cc2d05823bb5385163d6d622f2876b}{Num5}} = 0x35
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a1a27cb4485f9d2845b665d322bcd9fe4}{Num6}} = 0x36
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a6211433732a4fff9167554e9b27c081c}{Num7}} = 0x37
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ab94985e055b0c986b6e21e3475847313}{Num8}} = 0x38
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a7ed6f4343376107c93bfff4b56feafb1}{Num9}} = 0x39
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a3b98e2dffc6cb06a89dcb0d5c60a0206}{A}} = 0x41
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a9d3d9048db16a7eee539e93e3618cbe7}{B}} = 0x42
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aaa53ca0b650dfd85c4f59fa156f7a2cc}{C}} = 0x43
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a350bfcb1e3cfb28ddff48ce525d4f139}{D}} = 0x44
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aa57b8491d1d8fc1014dd54bcf83b130a}{E}} = 0x45
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a1fd406685cbdee605d0a7bebed56fdb0}{F}} = 0x46
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a86d8d92aba9ecf9bbf89f69cb3e49588}{G}} = 0x47
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_afaafc315b95987fc2b071bcd8f698b81}{H}} = 0x48
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a66cc12e3c6d68de3fef6de89cf033f67}{I}} = 0x49
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aeb9806a56e1e80b69cc9a606b36cfe4b}{J}} = 0x4A
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a16e4ef534cec559430e07e05eb71c719}{K}} = 0x4B
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a67824ecf84f5816f07b74fa956bdbcd2}{L}} = 0x4C
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_aad05f78187c942f9dd521605fa81f1ba}{M}} = 0x4D
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a8cc2e7240164328fdc3f0e5e21032c56}{N}} = 0x4E
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ae48bf9dad3f5d442f9d14d931be6f43e}{O}} = 0x4F
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a4baee84af7a92177c9064ddc2fc010ce}{P}} = 0x50
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a7e56035a736d269ad670f312496a0846}{Q}} = 0x51
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_acb95449a94688af33f6e9bb090cf2936}{R}} = 0x52
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ad53aeb78abc83a52ab8982f5c82a3d5b}{S}} = 0x53
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}} = 0x54
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a81cf6107131a3583e2b0b762cb9c2862}{U}} = 0x55
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ac0055fa4cdc19a2690bfee3643413a7d}{V}} = 0x56
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a0a9b52fb6605edc74fd7d5359f34477e}{W}} = 0x57
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ac51b57a703ba1c5869228690c93e1701}{X}} = 0x58
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a0867f43e27585e019c13f7f4b7c4ab6b}{Y}} = 0x59
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}} = 0x5A
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ae21510f404fa972428e6d94ac84736be}{L\+Shift}} = 0x\+A0
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_a09c6781287556d696920d0284a4bfbcc}{Pressed}} = 0b001
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_ae94eadf87eda4635f7cb8e537ec7ad9a}{Just\+Pressed}} = 0b010
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_keyboard_event_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}\label{_keyboard_event_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!DllExport@{DllExport}}
+\index{DllExport@{DllExport}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{DllExport}{DllExport}}
+{\footnotesize\ttfamily \#define Dll\+Export~\+\_\+\+\_\+declspec( dllexport )}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_keyboard_event_8h_a3b98e2dffc6cb06a89dcb0d5c60a0206}\label{_keyboard_event_8h_a3b98e2dffc6cb06a89dcb0d5c60a0206}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!A@{A}}
+\index{A@{A}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily A = 0x41}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a7d99a6d1f8766d52346b73a4a6f940b6}\label{_keyboard_event_8h_a7d99a6d1f8766d52346b73a4a6f940b6}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Alt@{Alt}}
+\index{Alt@{Alt}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Alt}{Alt}}
+{\footnotesize\ttfamily Alt = 0x12}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a9d3d9048db16a7eee539e93e3618cbe7}\label{_keyboard_event_8h_a9d3d9048db16a7eee539e93e3618cbe7}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!B@{B}}
+\index{B@{B}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily B = 0x42}
+
+\mbox{\Hypertarget{_keyboard_event_8h_abd87ebc94f876afe157e6aba00ea0c14}\label{_keyboard_event_8h_abd87ebc94f876afe157e6aba00ea0c14}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Backspace@{Backspace}}
+\index{Backspace@{Backspace}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Backspace}{Backspace}}
+{\footnotesize\ttfamily Backspace = 0x08}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aaa53ca0b650dfd85c4f59fa156f7a2cc}\label{_keyboard_event_8h_aaa53ca0b650dfd85c4f59fa156f7a2cc}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!C@{C}}
+\index{C@{C}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{C}{C}}
+{\footnotesize\ttfamily C = 0x43}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aaf79f96b085258f109c12830b8f09e85}\label{_keyboard_event_8h_aaf79f96b085258f109c12830b8f09e85}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Capslock@{Capslock}}
+\index{Capslock@{Capslock}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Capslock}{Capslock}}
+{\footnotesize\ttfamily Capslock = 0x0080}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a039b98dabf7e7ae40e1e7e46a7c39def}\label{_keyboard_event_8h_a039b98dabf7e7ae40e1e7e46a7c39def}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!CapsLock@{CapsLock}}
+\index{CapsLock@{CapsLock}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{CapsLock}{CapsLock}}
+{\footnotesize\ttfamily Caps\+Lock = 0x14}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ad66a34766cc32d648b974bdb475c5583}\label{_keyboard_event_8h_ad66a34766cc32d648b974bdb475c5583}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Clear@{Clear}}
+\index{Clear@{Clear}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Clear}{Clear}}
+{\footnotesize\ttfamily Clear = 0x0C}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8c72c82f024ad6af2e49918de816504f}\label{_keyboard_event_8h_a8c72c82f024ad6af2e49918de816504f}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Ctrl@{Ctrl}}
+\index{Ctrl@{Ctrl}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Ctrl}{Ctrl}}
+{\footnotesize\ttfamily Ctrl = 0x11}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a350bfcb1e3cfb28ddff48ce525d4f139}\label{_keyboard_event_8h_a350bfcb1e3cfb28ddff48ce525d4f139}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!D@{D}}
+\index{D@{D}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{D}{D}}
+{\footnotesize\ttfamily D = 0x44}
+
+\mbox{\Hypertarget{_keyboard_event_8h_afc275d75a75bff6fcde31a81f263edd2}\label{_keyboard_event_8h_afc275d75a75bff6fcde31a81f263edd2}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Delete@{Delete}}
+\index{Delete@{Delete}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Delete}{Delete}}
+{\footnotesize\ttfamily Delete = 0x2E}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a5de098cb7b4e33c72a4bd44289e63657}\label{_keyboard_event_8h_a5de098cb7b4e33c72a4bd44289e63657}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!DownArrow@{DownArrow}}
+\index{DownArrow@{DownArrow}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{DownArrow}{DownArrow}}
+{\footnotesize\ttfamily Down\+Arrow = 0x28}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aa57b8491d1d8fc1014dd54bcf83b130a}\label{_keyboard_event_8h_aa57b8491d1d8fc1014dd54bcf83b130a}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!E@{E}}
+\index{E@{E}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily E = 0x45}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a3984936eef37a8ac0ba1cd004d546a4d}\label{_keyboard_event_8h_a3984936eef37a8ac0ba1cd004d546a4d}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!End@{End}}
+\index{End@{End}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily End = 0x23}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ac807c637c522e2e41feb9a43eb9feec5}\label{_keyboard_event_8h_ac807c637c522e2e41feb9a43eb9feec5}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Enhanced@{Enhanced}}
+\index{Enhanced@{Enhanced}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Enhanced}{Enhanced}}
+{\footnotesize\ttfamily Enhanced = 0x0100}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ad1402ace29cb6b74f0236f6f2ac8a8bb}\label{_keyboard_event_8h_ad1402ace29cb6b74f0236f6f2ac8a8bb}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Enter@{Enter}}
+\index{Enter@{Enter}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Enter}{Enter}}
+{\footnotesize\ttfamily Enter = 0x0D}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aa01f53f95b4b05f2c5713afb71b947ba}\label{_keyboard_event_8h_aa01f53f95b4b05f2c5713afb71b947ba}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Escape@{Escape}}
+\index{Escape@{Escape}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Escape}{Escape}}
+{\footnotesize\ttfamily Escape = 0x1B}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a1fd406685cbdee605d0a7bebed56fdb0}\label{_keyboard_event_8h_a1fd406685cbdee605d0a7bebed56fdb0}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!F@{F}}
+\index{F@{F}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily F = 0x46}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a86d8d92aba9ecf9bbf89f69cb3e49588}\label{_keyboard_event_8h_a86d8d92aba9ecf9bbf89f69cb3e49588}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!G@{G}}
+\index{G@{G}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily G = 0x47}
+
+\mbox{\Hypertarget{_keyboard_event_8h_afaafc315b95987fc2b071bcd8f698b81}\label{_keyboard_event_8h_afaafc315b95987fc2b071bcd8f698b81}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!H@{H}}
+\index{H@{H}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily H = 0x48}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a9aa721042acde3b02cb77a4392d02d3b}\label{_keyboard_event_8h_a9aa721042acde3b02cb77a4392d02d3b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Help@{Help}}
+\index{Help@{Help}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Help}{Help}}
+{\footnotesize\ttfamily Help = 0x2F}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a636ca6b95f5129da8b6de675e1793b9b}\label{_keyboard_event_8h_a636ca6b95f5129da8b6de675e1793b9b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Home@{Home}}
+\index{Home@{Home}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Home}{Home}}
+{\footnotesize\ttfamily Home = 0x24}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a66cc12e3c6d68de3fef6de89cf033f67}\label{_keyboard_event_8h_a66cc12e3c6d68de3fef6de89cf033f67}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!I@{I}}
+\index{I@{I}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{I}{I}}
+{\footnotesize\ttfamily I = 0x49}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8c1f14f07c9eedcbbb2cc61988030646}\label{_keyboard_event_8h_a8c1f14f07c9eedcbbb2cc61988030646}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Insert@{Insert}}
+\index{Insert@{Insert}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Insert}{Insert}}
+{\footnotesize\ttfamily Insert = 0x2D}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aeb9806a56e1e80b69cc9a606b36cfe4b}\label{_keyboard_event_8h_aeb9806a56e1e80b69cc9a606b36cfe4b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!J@{J}}
+\index{J@{J}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{J}{J}}
+{\footnotesize\ttfamily J = 0x4A}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ae94eadf87eda4635f7cb8e537ec7ad9a}\label{_keyboard_event_8h_ae94eadf87eda4635f7cb8e537ec7ad9a}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!JustPressed@{JustPressed}}
+\index{JustPressed@{JustPressed}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{JustPressed}{JustPressed}}
+{\footnotesize\ttfamily Just\+Pressed = 0b010}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a16e4ef534cec559430e07e05eb71c719}\label{_keyboard_event_8h_a16e4ef534cec559430e07e05eb71c719}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!K@{K}}
+\index{K@{K}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily K = 0x4B}
+
+\mbox{\Hypertarget{_keyboard_event_8h_acab3ae4e298cf3732b3afd779bf3b67b}\label{_keyboard_event_8h_acab3ae4e298cf3732b3afd779bf3b67b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Kana@{Kana}}
+\index{Kana@{Kana}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Kana}{Kana}}
+{\footnotesize\ttfamily Kana = 0x15}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a67824ecf84f5816f07b74fa956bdbcd2}\label{_keyboard_event_8h_a67824ecf84f5816f07b74fa956bdbcd2}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!L@{L}}
+\index{L@{L}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily L = 0x4C}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a855c533a7fe3079c501c82baa9e58576}\label{_keyboard_event_8h_a855c533a7fe3079c501c82baa9e58576}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!LeftAlt@{LeftAlt}}
+\index{LeftAlt@{LeftAlt}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{LeftAlt}{LeftAlt}}
+{\footnotesize\ttfamily Left\+Alt = 0x0002}
+
+\mbox{\Hypertarget{_keyboard_event_8h_adfbac2cffa806bef2ee0a77bec1b4acb}\label{_keyboard_event_8h_adfbac2cffa806bef2ee0a77bec1b4acb}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!LeftArrow@{LeftArrow}}
+\index{LeftArrow@{LeftArrow}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{LeftArrow}{LeftArrow}}
+{\footnotesize\ttfamily Left\+Arrow = 0x25}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a35b4a8cf67a4919958bc4955ff34f412}\label{_keyboard_event_8h_a35b4a8cf67a4919958bc4955ff34f412}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!LeftCtrl@{LeftCtrl}}
+\index{LeftCtrl@{LeftCtrl}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{LeftCtrl}{LeftCtrl}}
+{\footnotesize\ttfamily Left\+Ctrl = 0x0008}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ae21510f404fa972428e6d94ac84736be}\label{_keyboard_event_8h_ae21510f404fa972428e6d94ac84736be}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!LShift@{LShift}}
+\index{LShift@{LShift}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{LShift}{LShift}}
+{\footnotesize\ttfamily L\+Shift = 0x\+A0}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aad05f78187c942f9dd521605fa81f1ba}\label{_keyboard_event_8h_aad05f78187c942f9dd521605fa81f1ba}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!M@{M}}
+\index{M@{M}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily M = 0x4D}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8cc2e7240164328fdc3f0e5e21032c56}\label{_keyboard_event_8h_a8cc2e7240164328fdc3f0e5e21032c56}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!N@{N}}
+\index{N@{N}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily N = 0x4E}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a72ab321314dd60c96b4275655828e00a}\label{_keyboard_event_8h_a72ab321314dd60c96b4275655828e00a}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Null@{Null}}
+\index{Null@{Null}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Null}{Null}}
+{\footnotesize\ttfamily Null = 0x0000}
+
+\mbox{\Hypertarget{_keyboard_event_8h_af50fddc42c748e727e5910ae19becdee}\label{_keyboard_event_8h_af50fddc42c748e727e5910ae19becdee}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num0@{Num0}}
+\index{Num0@{Num0}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num0}{Num0}}
+{\footnotesize\ttfamily Num0 = 0x30}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aebca82ac6bcc71c096ac586b94ff6152}\label{_keyboard_event_8h_aebca82ac6bcc71c096ac586b94ff6152}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num1@{Num1}}
+\index{Num1@{Num1}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num1}{Num1}}
+{\footnotesize\ttfamily Num1 = 0x31}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a84ee590eacb6b7022432ddd3fa82b9d3}\label{_keyboard_event_8h_a84ee590eacb6b7022432ddd3fa82b9d3}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num2@{Num2}}
+\index{Num2@{Num2}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num2}{Num2}}
+{\footnotesize\ttfamily Num2 = 0x32}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8ca374a2c8c42489bbac36cf0f11fe2d}\label{_keyboard_event_8h_a8ca374a2c8c42489bbac36cf0f11fe2d}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num3@{Num3}}
+\index{Num3@{Num3}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num3}{Num3}}
+{\footnotesize\ttfamily Num3 = 0x33}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a346e1ea95fd5a707890617aa70ae5dbc}\label{_keyboard_event_8h_a346e1ea95fd5a707890617aa70ae5dbc}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num4@{Num4}}
+\index{Num4@{Num4}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num4}{Num4}}
+{\footnotesize\ttfamily Num4 = 0x34}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a24cc2d05823bb5385163d6d622f2876b}\label{_keyboard_event_8h_a24cc2d05823bb5385163d6d622f2876b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num5@{Num5}}
+\index{Num5@{Num5}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num5}{Num5}}
+{\footnotesize\ttfamily Num5 = 0x35}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a1a27cb4485f9d2845b665d322bcd9fe4}\label{_keyboard_event_8h_a1a27cb4485f9d2845b665d322bcd9fe4}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num6@{Num6}}
+\index{Num6@{Num6}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num6}{Num6}}
+{\footnotesize\ttfamily Num6 = 0x36}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a6211433732a4fff9167554e9b27c081c}\label{_keyboard_event_8h_a6211433732a4fff9167554e9b27c081c}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num7@{Num7}}
+\index{Num7@{Num7}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num7}{Num7}}
+{\footnotesize\ttfamily Num7 = 0x37}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ab94985e055b0c986b6e21e3475847313}\label{_keyboard_event_8h_ab94985e055b0c986b6e21e3475847313}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num8@{Num8}}
+\index{Num8@{Num8}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num8}{Num8}}
+{\footnotesize\ttfamily Num8 = 0x38}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a7ed6f4343376107c93bfff4b56feafb1}\label{_keyboard_event_8h_a7ed6f4343376107c93bfff4b56feafb1}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Num9@{Num9}}
+\index{Num9@{Num9}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Num9}{Num9}}
+{\footnotesize\ttfamily Num9 = 0x39}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a240c721e2d4ec4b7b20dabe1847c2fe0}\label{_keyboard_event_8h_a240c721e2d4ec4b7b20dabe1847c2fe0}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Numlock@{Numlock}}
+\index{Numlock@{Numlock}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Numlock}{Numlock}}
+{\footnotesize\ttfamily Numlock = 0x0020}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ae48bf9dad3f5d442f9d14d931be6f43e}\label{_keyboard_event_8h_ae48bf9dad3f5d442f9d14d931be6f43e}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!O@{O}}
+\index{O@{O}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{O}{O}}
+{\footnotesize\ttfamily O = 0x4F}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a4baee84af7a92177c9064ddc2fc010ce}\label{_keyboard_event_8h_a4baee84af7a92177c9064ddc2fc010ce}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!P@{P}}
+\index{P@{P}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily P = 0x50}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aefeee4be5a06079b7d865385ae909840}\label{_keyboard_event_8h_aefeee4be5a06079b7d865385ae909840}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!PageDown@{PageDown}}
+\index{PageDown@{PageDown}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{PageDown}{PageDown}}
+{\footnotesize\ttfamily Page\+Down = 0x22}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a5edacb1fb6eb187d48bad49f48f03fde}\label{_keyboard_event_8h_a5edacb1fb6eb187d48bad49f48f03fde}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!PageUP@{PageUP}}
+\index{PageUP@{PageUP}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{PageUP}{PageUP}}
+{\footnotesize\ttfamily Page\+UP = 0x21}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a6133f16dc6d09a0c5cc8822ab1465f41}\label{_keyboard_event_8h_a6133f16dc6d09a0c5cc8822ab1465f41}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Pause@{Pause}}
+\index{Pause@{Pause}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Pause}{Pause}}
+{\footnotesize\ttfamily Pause = 0x13}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a09c6781287556d696920d0284a4bfbcc}\label{_keyboard_event_8h_a09c6781287556d696920d0284a4bfbcc}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Pressed@{Pressed}}
+\index{Pressed@{Pressed}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Pressed}{Pressed}}
+{\footnotesize\ttfamily Pressed = 0b001}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ad5ab55d263c1baf5e0ec9fcd3240aa3c}\label{_keyboard_event_8h_ad5ab55d263c1baf5e0ec9fcd3240aa3c}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Print@{Print}}
+\index{Print@{Print}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Print}{Print}}
+{\footnotesize\ttfamily Print = 0x2A}
+
+\mbox{\Hypertarget{_keyboard_event_8h_acfd6429a432b4e58d8a961eac81130e8}\label{_keyboard_event_8h_acfd6429a432b4e58d8a961eac81130e8}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!PrintSreen@{PrintSreen}}
+\index{PrintSreen@{PrintSreen}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{PrintSreen}{PrintSreen}}
+{\footnotesize\ttfamily Print\+Sreen = 0x2C}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a7e56035a736d269ad670f312496a0846}\label{_keyboard_event_8h_a7e56035a736d269ad670f312496a0846}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Q@{Q}}
+\index{Q@{Q}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Q}{Q}}
+{\footnotesize\ttfamily Q = 0x51}
+
+\mbox{\Hypertarget{_keyboard_event_8h_acb95449a94688af33f6e9bb090cf2936}\label{_keyboard_event_8h_acb95449a94688af33f6e9bb090cf2936}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!R@{R}}
+\index{R@{R}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily R = 0x52}
+
+\mbox{\Hypertarget{_keyboard_event_8h_af41e2594ff18adfe463dfd4e8affec34}\label{_keyboard_event_8h_af41e2594ff18adfe463dfd4e8affec34}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!RightAlt@{RightAlt}}
+\index{RightAlt@{RightAlt}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{RightAlt}{RightAlt}}
+{\footnotesize\ttfamily Right\+Alt = 0x0001}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ab26ebaca3d64cfdb31cb55fb61bf30fa}\label{_keyboard_event_8h_ab26ebaca3d64cfdb31cb55fb61bf30fa}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!RightArrow@{RightArrow}}
+\index{RightArrow@{RightArrow}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{RightArrow}{RightArrow}}
+{\footnotesize\ttfamily Right\+Arrow = 0x27}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ad53aeb78abc83a52ab8982f5c82a3d5b}\label{_keyboard_event_8h_ad53aeb78abc83a52ab8982f5c82a3d5b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!S@{S}}
+\index{S@{S}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily S = 0x53}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a0c37e8c9e314fff323a78db5f11fbde8}\label{_keyboard_event_8h_a0c37e8c9e314fff323a78db5f11fbde8}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!ScrollLock@{ScrollLock}}
+\index{ScrollLock@{ScrollLock}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{ScrollLock}{ScrollLock}}
+{\footnotesize\ttfamily Scroll\+Lock = 0x0040}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8c2abb54c6400be51f883d1126f23fd0}\label{_keyboard_event_8h_a8c2abb54c6400be51f883d1126f23fd0}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Select@{Select}}
+\index{Select@{Select}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Select}{Select}}
+{\footnotesize\ttfamily Select = 0x29}
+
+\mbox{\Hypertarget{_keyboard_event_8h_aabddd589ce7fd3d829e15265d92dbedc}\label{_keyboard_event_8h_aabddd589ce7fd3d829e15265d92dbedc}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Shift@{Shift}}
+\index{Shift@{Shift}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Shift}{Shift}}
+{\footnotesize\ttfamily Shift = 0x0010}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ab11a1dda34491acff014ddfc9e6bafb8}\label{_keyboard_event_8h_ab11a1dda34491acff014ddfc9e6bafb8}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Space@{Space}}
+\index{Space@{Space}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Space}{Space}}
+{\footnotesize\ttfamily Space = 0x20}
+
+\mbox{\Hypertarget{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}\label{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!T@{T}}
+\index{T@{T}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily T = 0x54}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a8fe90f207489a0982422faf42ad59f1c}\label{_keyboard_event_8h_a8fe90f207489a0982422faf42ad59f1c}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Tab@{Tab}}
+\index{Tab@{Tab}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Tab}{Tab}}
+{\footnotesize\ttfamily Tab = 0x09}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a81cf6107131a3583e2b0b762cb9c2862}\label{_keyboard_event_8h_a81cf6107131a3583e2b0b762cb9c2862}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!U@{U}}
+\index{U@{U}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{U}{U}}
+{\footnotesize\ttfamily U = 0x55}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ab32fb9d57455c03e9f28cf7d73d52026}\label{_keyboard_event_8h_ab32fb9d57455c03e9f28cf7d73d52026}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Undefined@{Undefined}}
+\index{Undefined@{Undefined}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Undefined}{Undefined}}
+{\footnotesize\ttfamily Undefined = 0x07}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ab14ff5f419018cba336a1127a3b9ff98}\label{_keyboard_event_8h_ab14ff5f419018cba336a1127a3b9ff98}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!UpArrow@{UpArrow}}
+\index{UpArrow@{UpArrow}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{UpArrow}{UpArrow}}
+{\footnotesize\ttfamily Up\+Arrow = 0x26}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ac0055fa4cdc19a2690bfee3643413a7d}\label{_keyboard_event_8h_ac0055fa4cdc19a2690bfee3643413a7d}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!V@{V}}
+\index{V@{V}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily V = 0x56}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a0a9b52fb6605edc74fd7d5359f34477e}\label{_keyboard_event_8h_a0a9b52fb6605edc74fd7d5359f34477e}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!W@{W}}
+\index{W@{W}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{W}{W}}
+{\footnotesize\ttfamily W = 0x57}
+
+\mbox{\Hypertarget{_keyboard_event_8h_ac51b57a703ba1c5869228690c93e1701}\label{_keyboard_event_8h_ac51b57a703ba1c5869228690c93e1701}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!X@{X}}
+\index{X@{X}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily X = 0x58}
+
+\mbox{\Hypertarget{_keyboard_event_8h_a0867f43e27585e019c13f7f4b7c4ab6b}\label{_keyboard_event_8h_a0867f43e27585e019c13f7f4b7c4ab6b}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Y@{Y}}
+\index{Y@{Y}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily Y = 0x59}
+
+\mbox{\Hypertarget{_keyboard_event_8h_adc18d83abfd9f87d396e8fd6b6ac0fe1}\label{_keyboard_event_8h_adc18d83abfd9f87d396e8fd6b6ac0fe1}} 
+\index{KeyboardEvent.h@{KeyboardEvent.h}!Z@{Z}}
+\index{Z@{Z}!KeyboardEvent.h@{KeyboardEvent.h}}
+\subsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily Z = 0x5A}
+

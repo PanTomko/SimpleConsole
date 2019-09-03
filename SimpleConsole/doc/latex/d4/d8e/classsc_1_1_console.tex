@@ -1,0 +1,371 @@
+\hypertarget{classsc_1_1_console}{}\section{sc\+::Console Class Reference}
+\label{classsc_1_1_console}\index{sc::Console@{sc::Console}}
+
+
+{\ttfamily \#include $<$Console.\+h$>$}
+
+Inheritance diagram for sc\+::Console\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d8e/classsc_1_1_console}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a175546939e190230b6cd02cbc919c216}{set\+Font\+Size}} (int size)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a9ac084f4c300b486eafe2ef98c812e4f}{set\+Title}} (std\+::wstring title)
+\begin{DoxyCompactList}\small\item\em sets console title \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_console_af54de3629d03639be7d4ac3d52709495}{set\+Font\+Family}} (std\+::wstring family)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_abd46f91b6a7bb1f349bac8ac95492efc}{enable\+Unicode\+Encoding}} ()
+\begin{DoxyCompactList}\small\item\em enable unicode encoding utf\+\_\+8 ( if u do that u cant use cout insted use wcout etc. ) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_console_a1c17eef1630a77861d0695ece0a5d0d8}{clean}} (H\+A\+N\+D\+LE $\ast$output\+\_\+buffer=nullptr)
+\begin{DoxyCompactList}\small\item\em cleans active buffer if no other specifed ( the one that is not shown to user ) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_console_aa392bbf2aeecd5e86a4e624bcf9b087a}{display}} ()
+\begin{DoxyCompactList}\small\item\em Swaps buffers ( shows active buffer ) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_console_ae8a907a1f42fa15bccc15ad4f611b37c}{get\+Cursor\+Possition}} (H\+A\+N\+D\+LE $\ast$handle=nullptr)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_afbcbbe55d42884df317216f85721afaf}{set\+Cursor\+Possition}} (const \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \&possition)
+\begin{DoxyCompactList}\small\item\em sets cursor possition for both buffers \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_console_abcbb6154c7265d8a31b46338faa4ea8f}{show\+Cursor}} (bool flag)
+\begin{DoxyCompactList}\small\item\em hide/show blinking currsor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_console_aa50c09dfc2a61531e5bb12456819485a}{set\+Camera\+Active}} (bool flag)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a40d14517dcebf7f4ded1656efdbf5bcf}{draw}} (char z, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a86c67142b3b25386f0a2333e80db62d3}{draw}} (wchar\+\_\+t z, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_af65001cc3911780cf555fdab60040a0d}{set\+Atribute}} (W\+O\+RD at, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a87065beb3ff9bcfb3eebc2d72586b3a2}{draw}} (const \mbox{\hyperlink{classsc_1_1_mark}{Mark}} \&mark, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a139ec2f3c1296b5878a4a8f0da1c30cf}{draw}} (const \mbox{\hyperlink{classsc_1_1_w_mark}{W\+Mark}} \&mark, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition)
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_ae5305b5370392f5d798fdd466e017865}{draw}} (const std\+::string \&str, W\+O\+RD at, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition, char xyz=\textquotesingle{}x\textquotesingle{})
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a855cdd56ef1b7bc0117ae79f926fb4fd}{draw}} (const std\+::wstring \&str, W\+O\+RD at, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition, char xyz=\textquotesingle{}x\textquotesingle{})
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a2cf4ab527564da95b6867db3e7cd0b45}{draw}} (const \mbox{\hyperlink{classsc_1_1_bit_a}{BitA}}$<$ \mbox{\hyperlink{classsc_1_1_w_mark}{W\+Mark}} $>$ \&img, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} start=\{ 0, 0 \}, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} end=\{ 0, 0 \})
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_a7d0da8266093966f6c7e632bd5f6ccb8}{draw}} (const \mbox{\hyperlink{classsc_1_1_bit_a}{BitA}}$<$ \mbox{\hyperlink{classsc_1_1_mark}{Mark}} $>$ \&img, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} possition, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} start=\{0, 0\}, \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} end=\{ 0, 0 \})
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_ab503eab53751fde4f1e27c6f6901e794}{set\+Console\+Size}} (\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} size)
+\begin{DoxyCompactList}\small\item\em sets console size \end{DoxyCompactList}\item 
+S\+M\+A\+L\+L\+\_\+\+R\+E\+CT \mbox{\hyperlink{classsc_1_1_console_af24d25c708971e7ced68c768945c3e2f}{get\+Console\+Size}} ()
+\item 
+void \mbox{\hyperlink{classsc_1_1_console_abc2f735f5b6f81a6356b4cd26f237ade}{set\+Buffer\+Size}} (\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} size)
+\begin{DoxyCompactList}\small\item\em sets buffer size. first use void \mbox{\hyperlink{classsc_1_1_console_ab503eab53751fde4f1e27c6f6901e794}{set\+Console\+Size(\+Vector2\+D size)}}; to match console size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_console_a80a3d34908aa888b1580de2ff6c8987f}{get\+Buffer\+Size}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_console_a37b15f73f72773e876927d5290d49780}{Console}} (\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} size, int font\+\_\+size)
+\item 
+\mbox{\hyperlink{classsc_1_1_console_a32e8c79c8579b1b076e53848c540d4e7}{$\sim$\+Console}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc_1_1_texture}{Texture}} \mbox{\hyperlink{classsc_1_1_console_a6e20566e65389c1e6c9a51583567aea8}{buffer\+\_\+texture}}
+\begin{DoxyCompactList}\small\item\em final resul that will be draw to console buffer ( the one that is not visible ) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc_1_1_camera}{Camera}} \mbox{\hyperlink{classsc_1_1_console_ae0ab85054dd025a0a29f141e0fa06ce7}{default\+\_\+camera}}
+\item 
+\mbox{\hyperlink{classsc_1_1_camera}{Camera}} $\ast$ \mbox{\hyperlink{classsc_1_1_console_a6c65d539f04b9463516e74ecc75a5fcd}{active\+\_\+camera}}
+\item 
+bool \mbox{\hyperlink{classsc_1_1_console_a439fd7c948b530f8688ab4db0bfa82fc}{is\+\_\+camera\+\_\+active}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+H\+A\+N\+D\+LE \mbox{\hyperlink{classsc_1_1_console_a1a85530e67e217a1ceb3072efde5fed0}{console\+\_\+buffer\+\_\+one}}
+\begin{DoxyCompactList}\small\item\em handle to orginal console buffer output \end{DoxyCompactList}\item 
+H\+A\+N\+D\+LE \mbox{\hyperlink{classsc_1_1_console_a5a50d3e73c633a396e88d370cd782307}{console\+\_\+buffer\+\_\+two}}
+\begin{DoxyCompactList}\small\item\em new handle to console buffer output \end{DoxyCompactList}\item 
+H\+A\+N\+D\+LE $\ast$ \mbox{\hyperlink{classsc_1_1_console_a26bea53c8596a7080128601b0780e92b}{console\+\_\+active\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em pointer to active buffer for output ( the one that is not shown to user ) \end{DoxyCompactList}\item 
+H\+A\+N\+D\+LE \mbox{\hyperlink{classsc_1_1_console_a9c6f9aa5d224b74bdae42a3ca591c85c}{console\+\_\+input}}
+\begin{DoxyCompactList}\small\item\em for reading events \end{DoxyCompactList}\item 
+S\+M\+A\+L\+L\+\_\+\+R\+E\+CT \mbox{\hyperlink{classsc_1_1_console_a7f4711856c9f7c63be59021127f68080}{console\+\_\+size}}
+\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_console_ad132f779812461e188adbd885318af3e}{buffer\+\_\+size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classsc_1_1_console}{Console}} provaide interface for windows promp. It supports event handling, changing settings, drawing on to it, double buffering for non fickering ( intended for games ) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_a37b15f73f72773e876927d5290d49780}\label{classsc_1_1_console_a37b15f73f72773e876927d5290d49780}} 
+\index{sc::Console@{sc::Console}!Console@{Console}}
+\index{Console@{Console}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{Console()}{Console()}}
+{\footnotesize\ttfamily Console\+::\+Console (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{size,  }\item[{int}]{font\+\_\+size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a32e8c79c8579b1b076e53848c540d4e7}\label{classsc_1_1_console_a32e8c79c8579b1b076e53848c540d4e7}} 
+\index{sc::Console@{sc::Console}!````~Console@{$\sim$Console}}
+\index{````~Console@{$\sim$Console}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{$\sim$Console()}{~Console()}}
+{\footnotesize\ttfamily Console\+::$\sim$\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_a1c17eef1630a77861d0695ece0a5d0d8}\label{classsc_1_1_console_a1c17eef1630a77861d0695ece0a5d0d8}} 
+\index{sc::Console@{sc::Console}!clean@{clean}}
+\index{clean@{clean}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Console\+::clean (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE $\ast$}]{output\+\_\+buffer = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+cleans active buffer if no other specifed ( the one that is not shown to user ) 
+
+\mbox{\Hypertarget{classsc_1_1_console_aa392bbf2aeecd5e86a4e624bcf9b087a}\label{classsc_1_1_console_aa392bbf2aeecd5e86a4e624bcf9b087a}} 
+\index{sc::Console@{sc::Console}!display@{display}}
+\index{display@{display}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Console\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swaps buffers ( shows active buffer ) 
+
+\mbox{\Hypertarget{classsc_1_1_console_a40d14517dcebf7f4ded1656efdbf5bcf}\label{classsc_1_1_console_a40d14517dcebf7f4ded1656efdbf5bcf}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{char}]{z,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a86c67142b3b25386f0a2333e80db62d3}\label{classsc_1_1_console_a86c67142b3b25386f0a2333e80db62d3}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{z,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a87065beb3ff9bcfb3eebc2d72586b3a2}\label{classsc_1_1_console_a87065beb3ff9bcfb3eebc2d72586b3a2}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_mark}{Mark}} \&}]{mark,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a139ec2f3c1296b5878a4a8f0da1c30cf}\label{classsc_1_1_console_a139ec2f3c1296b5878a4a8f0da1c30cf}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_w_mark}{W\+Mark}} \&}]{mark,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_ae5305b5370392f5d798fdd466e017865}\label{classsc_1_1_console_ae5305b5370392f5d798fdd466e017865}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{W\+O\+RD}]{at,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition,  }\item[{char}]{xyz = {\ttfamily \textquotesingle{}x\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a855cdd56ef1b7bc0117ae79f926fb4fd}\label{classsc_1_1_console_a855cdd56ef1b7bc0117ae79f926fb4fd}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{str,  }\item[{W\+O\+RD}]{at,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition,  }\item[{char}]{xyz = {\ttfamily \textquotesingle{}x\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a2cf4ab527564da95b6867db3e7cd0b45}\label{classsc_1_1_console_a2cf4ab527564da95b6867db3e7cd0b45}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_bit_a}{BitA}}$<$ \mbox{\hyperlink{classsc_1_1_w_mark}{W\+Mark}} $>$ \&}]{img,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{start = {\ttfamily \{~0,0~\}},  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{end = {\ttfamily \{~0,0~\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a7d0da8266093966f6c7e632bd5f6ccb8}\label{classsc_1_1_console_a7d0da8266093966f6c7e632bd5f6ccb8}} 
+\index{sc::Console@{sc::Console}!draw@{draw}}
+\index{draw@{draw}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily void Console\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_bit_a}{BitA}}$<$ \mbox{\hyperlink{classsc_1_1_mark}{Mark}} $>$ \&}]{img,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{start = {\ttfamily \{0,0\}},  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{end = {\ttfamily \{~0,0~\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_abd46f91b6a7bb1f349bac8ac95492efc}\label{classsc_1_1_console_abd46f91b6a7bb1f349bac8ac95492efc}} 
+\index{sc::Console@{sc::Console}!enableUnicodeEncoding@{enableUnicodeEncoding}}
+\index{enableUnicodeEncoding@{enableUnicodeEncoding}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{enableUnicodeEncoding()}{enableUnicodeEncoding()}}
+{\footnotesize\ttfamily void Console\+::enable\+Unicode\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+enable unicode encoding utf\+\_\+8 ( if u do that u cant use cout insted use wcout etc. ) 
+
+\mbox{\Hypertarget{classsc_1_1_console_a80a3d34908aa888b1580de2ff6c8987f}\label{classsc_1_1_console_a80a3d34908aa888b1580de2ff6c8987f}} 
+\index{sc::Console@{sc::Console}!getBufferSize@{getBufferSize}}
+\index{getBufferSize@{getBufferSize}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{getBufferSize()}{getBufferSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} Console\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_af24d25c708971e7ced68c768945c3e2f}\label{classsc_1_1_console_af24d25c708971e7ced68c768945c3e2f}} 
+\index{sc::Console@{sc::Console}!getConsoleSize@{getConsoleSize}}
+\index{getConsoleSize@{getConsoleSize}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{getConsoleSize()}{getConsoleSize()}}
+{\footnotesize\ttfamily S\+M\+A\+L\+L\+\_\+\+R\+E\+CT Console\+::get\+Console\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_ae8a907a1f42fa15bccc15ad4f611b37c}\label{classsc_1_1_console_ae8a907a1f42fa15bccc15ad4f611b37c}} 
+\index{sc::Console@{sc::Console}!getCursorPossition@{getCursorPossition}}
+\index{getCursorPossition@{getCursorPossition}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{getCursorPossition()}{getCursorPossition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} Console\+::get\+Cursor\+Possition (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE $\ast$}]{handle = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+returns cursor position true for buffer X, be defoult it will check active buffer ( the one that is not shown to user ) \mbox{\Hypertarget{classsc_1_1_console_af65001cc3911780cf555fdab60040a0d}\label{classsc_1_1_console_af65001cc3911780cf555fdab60040a0d}} 
+\index{sc::Console@{sc::Console}!setAtribute@{setAtribute}}
+\index{setAtribute@{setAtribute}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setAtribute()}{setAtribute()}}
+{\footnotesize\ttfamily void Console\+::set\+Atribute (\begin{DoxyParamCaption}\item[{W\+O\+RD}]{at,  }\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{possition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_abc2f735f5b6f81a6356b4cd26f237ade}\label{classsc_1_1_console_abc2f735f5b6f81a6356b4cd26f237ade}} 
+\index{sc::Console@{sc::Console}!setBufferSize@{setBufferSize}}
+\index{setBufferSize@{setBufferSize}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setBufferSize()}{setBufferSize()}}
+{\footnotesize\ttfamily void Console\+::set\+Buffer\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{size }\end{DoxyParamCaption})}
+
+
+
+sets buffer size. first use void \mbox{\hyperlink{classsc_1_1_console_ab503eab53751fde4f1e27c6f6901e794}{set\+Console\+Size(\+Vector2\+D size)}}; to match console size 
+
+\mbox{\Hypertarget{classsc_1_1_console_aa50c09dfc2a61531e5bb12456819485a}\label{classsc_1_1_console_aa50c09dfc2a61531e5bb12456819485a}} 
+\index{sc::Console@{sc::Console}!setCameraActive@{setCameraActive}}
+\index{setCameraActive@{setCameraActive}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setCameraActive()}{setCameraActive()}}
+{\footnotesize\ttfamily void Console\+::set\+Camera\+Active (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_ab503eab53751fde4f1e27c6f6901e794}\label{classsc_1_1_console_ab503eab53751fde4f1e27c6f6901e794}} 
+\index{sc::Console@{sc::Console}!setConsoleSize@{setConsoleSize}}
+\index{setConsoleSize@{setConsoleSize}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setConsoleSize()}{setConsoleSize()}}
+{\footnotesize\ttfamily void Console\+::set\+Console\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}}}]{size }\end{DoxyParamCaption})}
+
+
+
+sets console size 
+
+\mbox{\Hypertarget{classsc_1_1_console_afbcbbe55d42884df317216f85721afaf}\label{classsc_1_1_console_afbcbbe55d42884df317216f85721afaf}} 
+\index{sc::Console@{sc::Console}!setCursorPossition@{setCursorPossition}}
+\index{setCursorPossition@{setCursorPossition}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setCursorPossition()}{setCursorPossition()}}
+{\footnotesize\ttfamily void Console\+::set\+Cursor\+Possition (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \&}]{possition }\end{DoxyParamCaption})}
+
+
+
+sets cursor possition for both buffers 
+
+\mbox{\Hypertarget{classsc_1_1_console_af54de3629d03639be7d4ac3d52709495}\label{classsc_1_1_console_af54de3629d03639be7d4ac3d52709495}} 
+\index{sc::Console@{sc::Console}!setFontFamily@{setFontFamily}}
+\index{setFontFamily@{setFontFamily}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setFontFamily()}{setFontFamily()}}
+{\footnotesize\ttfamily void Console\+::set\+Font\+Family (\begin{DoxyParamCaption}\item[{std\+::wstring}]{family }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a175546939e190230b6cd02cbc919c216}\label{classsc_1_1_console_a175546939e190230b6cd02cbc919c216}} 
+\index{sc::Console@{sc::Console}!setFontSize@{setFontSize}}
+\index{setFontSize@{setFontSize}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setFontSize()}{setFontSize()}}
+{\footnotesize\ttfamily void Console\+::set\+Font\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_console_a9ac084f4c300b486eafe2ef98c812e4f}\label{classsc_1_1_console_a9ac084f4c300b486eafe2ef98c812e4f}} 
+\index{sc::Console@{sc::Console}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void Console\+::set\+Title (\begin{DoxyParamCaption}\item[{std\+::wstring}]{title }\end{DoxyParamCaption})}
+
+
+
+sets console title 
+
+\mbox{\Hypertarget{classsc_1_1_console_abcbb6154c7265d8a31b46338faa4ea8f}\label{classsc_1_1_console_abcbb6154c7265d8a31b46338faa4ea8f}} 
+\index{sc::Console@{sc::Console}!showCursor@{showCursor}}
+\index{showCursor@{showCursor}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{showCursor()}{showCursor()}}
+{\footnotesize\ttfamily void Console\+::show\+Cursor (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+hide/show blinking currsor 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_console_a6c65d539f04b9463516e74ecc75a5fcd}\label{classsc_1_1_console_a6c65d539f04b9463516e74ecc75a5fcd}} 
+\index{sc::Console@{sc::Console}!active\_camera@{active\_camera}}
+\index{active\_camera@{active\_camera}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{active\_camera}{active\_camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_camera}{Camera}}$\ast$ sc\+::\+Console\+::active\+\_\+camera}
+
+\mbox{\Hypertarget{classsc_1_1_console_ad132f779812461e188adbd885318af3e}\label{classsc_1_1_console_ad132f779812461e188adbd885318af3e}} 
+\index{sc::Console@{sc::Console}!buffer\_size@{buffer\_size}}
+\index{buffer\_size@{buffer\_size}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{buffer\_size}{buffer\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} sc\+::\+Console\+::buffer\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_a6e20566e65389c1e6c9a51583567aea8}\label{classsc_1_1_console_a6e20566e65389c1e6c9a51583567aea8}} 
+\index{sc::Console@{sc::Console}!buffer\_texture@{buffer\_texture}}
+\index{buffer\_texture@{buffer\_texture}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{buffer\_texture}{buffer\_texture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_texture}{Texture}} sc\+::\+Console\+::buffer\+\_\+texture}
+
+
+
+final resul that will be draw to console buffer ( the one that is not visible ) 
+
+\mbox{\Hypertarget{classsc_1_1_console_a26bea53c8596a7080128601b0780e92b}\label{classsc_1_1_console_a26bea53c8596a7080128601b0780e92b}} 
+\index{sc::Console@{sc::Console}!console\_active\_buffer@{console\_active\_buffer}}
+\index{console\_active\_buffer@{console\_active\_buffer}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{console\_active\_buffer}{console\_active\_buffer}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE$\ast$ sc\+::\+Console\+::console\+\_\+active\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to active buffer for output ( the one that is not shown to user ) 
+
+\mbox{\Hypertarget{classsc_1_1_console_a1a85530e67e217a1ceb3072efde5fed0}\label{classsc_1_1_console_a1a85530e67e217a1ceb3072efde5fed0}} 
+\index{sc::Console@{sc::Console}!console\_buffer\_one@{console\_buffer\_one}}
+\index{console\_buffer\_one@{console\_buffer\_one}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{console\_buffer\_one}{console\_buffer\_one}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE sc\+::\+Console\+::console\+\_\+buffer\+\_\+one\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+handle to orginal console buffer output 
+
+\mbox{\Hypertarget{classsc_1_1_console_a5a50d3e73c633a396e88d370cd782307}\label{classsc_1_1_console_a5a50d3e73c633a396e88d370cd782307}} 
+\index{sc::Console@{sc::Console}!console\_buffer\_two@{console\_buffer\_two}}
+\index{console\_buffer\_two@{console\_buffer\_two}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{console\_buffer\_two}{console\_buffer\_two}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE sc\+::\+Console\+::console\+\_\+buffer\+\_\+two\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+new handle to console buffer output 
+
+\mbox{\Hypertarget{classsc_1_1_console_a9c6f9aa5d224b74bdae42a3ca591c85c}\label{classsc_1_1_console_a9c6f9aa5d224b74bdae42a3ca591c85c}} 
+\index{sc::Console@{sc::Console}!console\_input@{console\_input}}
+\index{console\_input@{console\_input}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{console\_input}{console\_input}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE sc\+::\+Console\+::console\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+for reading events 
+
+\mbox{\Hypertarget{classsc_1_1_console_a7f4711856c9f7c63be59021127f68080}\label{classsc_1_1_console_a7f4711856c9f7c63be59021127f68080}} 
+\index{sc::Console@{sc::Console}!console\_size@{console\_size}}
+\index{console\_size@{console\_size}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{console\_size}{console\_size}}
+{\footnotesize\ttfamily S\+M\+A\+L\+L\+\_\+\+R\+E\+CT sc\+::\+Console\+::console\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_console_ae0ab85054dd025a0a29f141e0fa06ce7}\label{classsc_1_1_console_ae0ab85054dd025a0a29f141e0fa06ce7}} 
+\index{sc::Console@{sc::Console}!default\_camera@{default\_camera}}
+\index{default\_camera@{default\_camera}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{default\_camera}{default\_camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_camera}{Camera}} sc\+::\+Console\+::default\+\_\+camera}
+
+\mbox{\Hypertarget{classsc_1_1_console_a439fd7c948b530f8688ab4db0bfa82fc}\label{classsc_1_1_console_a439fd7c948b530f8688ab4db0bfa82fc}} 
+\index{sc::Console@{sc::Console}!is\_camera\_active@{is\_camera\_active}}
+\index{is\_camera\_active@{is\_camera\_active}!sc::Console@{sc::Console}}
+\subsubsection{\texorpdfstring{is\_camera\_active}{is\_camera\_active}}
+{\footnotesize\ttfamily bool sc\+::\+Console\+::is\+\_\+camera\+\_\+active}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_console_8h}{Console.\+h}}\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/src/\mbox{\hyperlink{_console_8cpp}{Console.\+cpp}}\end{DoxyCompactItemize}

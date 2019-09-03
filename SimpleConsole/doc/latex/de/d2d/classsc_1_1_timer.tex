@@ -1,0 +1,141 @@
+\hypertarget{classsc_1_1_timer}{}\section{sc\+::Timer Class Reference}
+\label{classsc_1_1_timer}\index{sc::Timer@{sc::Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_timer_a3a8b5272198d029779dc9302a54305a8}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts to cout time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_timer_a63f0eb44b27402196590a03781515dba}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops to count time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc_1_1_timer_a9020542d73357a4eef512eefaf57524b}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset timer to 0. \end{DoxyCompactList}\item 
+std\+::chrono\+::steady\+\_\+clock\+::duration \mbox{\hyperlink{classsc_1_1_timer_aad547701ae3ed5f294a9db485b9277e0}{get\+Elepased\+Time}} ()
+\begin{DoxyCompactList}\small\item\em returns duration of total time that passed since start/reset \end{DoxyCompactList}\item 
+std\+::chrono\+::steady\+\_\+clock\+::duration \mbox{\hyperlink{classsc_1_1_timer_a4e79e854f3a54d89822cc9c459742988}{get\+Stored\+Time}} ()
+\begin{DoxyCompactList}\small\item\em returns duration of stored time ( time that was only counted if timer was not stoped or reseted ) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}{$\sim$\+Timer}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classsc_1_1_timer_a2c23836479c69ea219f506a7ad8e83f5}{one\+\_\+shot}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::chrono\+::steady\+\_\+clock\+::duration \mbox{\hyperlink{classsc_1_1_timer_a78d41ad3dda6d9d5dea782407fc85648}{stored\+\_\+time}}
+\item 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classsc_1_1_timer_aa363104760a70b9e4535c9aeda427fb8}{time\+\_\+start}}
+\item 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classsc_1_1_timer_afeb4a40cc0ed2afbe4a0e2e0bf2f67cb}{time\+\_\+end}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classsc_1_1_timer}{Timer}} is used to masure time pass. Intended use for physic and event hadling. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}\label{classsc_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}} 
+\index{sc::Timer@{sc::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}\label{classsc_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}} 
+\index{sc::Timer@{sc::Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_timer_aad547701ae3ed5f294a9db485b9277e0}\label{classsc_1_1_timer_aad547701ae3ed5f294a9db485b9277e0}} 
+\index{sc::Timer@{sc::Timer}!getElepasedTime@{getElepasedTime}}
+\index{getElepasedTime@{getElepasedTime}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{getElepasedTime()}{getElepasedTime()}}
+{\footnotesize\ttfamily std\+::chrono\+::steady\+\_\+clock\+::duration Timer\+::get\+Elepased\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns duration of total time that passed since start/reset 
+
+\mbox{\Hypertarget{classsc_1_1_timer_a4e79e854f3a54d89822cc9c459742988}\label{classsc_1_1_timer_a4e79e854f3a54d89822cc9c459742988}} 
+\index{sc::Timer@{sc::Timer}!getStoredTime@{getStoredTime}}
+\index{getStoredTime@{getStoredTime}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{getStoredTime()}{getStoredTime()}}
+{\footnotesize\ttfamily std\+::chrono\+::steady\+\_\+clock\+::duration Timer\+::get\+Stored\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns duration of stored time ( time that was only counted if timer was not stoped or reseted ) 
+
+\mbox{\Hypertarget{classsc_1_1_timer_a9020542d73357a4eef512eefaf57524b}\label{classsc_1_1_timer_a9020542d73357a4eef512eefaf57524b}} 
+\index{sc::Timer@{sc::Timer}!reset@{reset}}
+\index{reset@{reset}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Timer\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset timer to 0. 
+
+\mbox{\Hypertarget{classsc_1_1_timer_a3a8b5272198d029779dc9302a54305a8}\label{classsc_1_1_timer_a3a8b5272198d029779dc9302a54305a8}} 
+\index{sc::Timer@{sc::Timer}!start@{start}}
+\index{start@{start}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Timer\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts to cout time. 
+
+\mbox{\Hypertarget{classsc_1_1_timer_a63f0eb44b27402196590a03781515dba}\label{classsc_1_1_timer_a63f0eb44b27402196590a03781515dba}} 
+\index{sc::Timer@{sc::Timer}!stop@{stop}}
+\index{stop@{stop}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Timer\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops to count time. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_timer_a2c23836479c69ea219f506a7ad8e83f5}\label{classsc_1_1_timer_a2c23836479c69ea219f506a7ad8e83f5}} 
+\index{sc::Timer@{sc::Timer}!one\_shot@{one\_shot}}
+\index{one\_shot@{one\_shot}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{one\_shot}{one\_shot}}
+{\footnotesize\ttfamily bool sc\+::\+Timer\+::one\+\_\+shot}
+
+\mbox{\Hypertarget{classsc_1_1_timer_a78d41ad3dda6d9d5dea782407fc85648}\label{classsc_1_1_timer_a78d41ad3dda6d9d5dea782407fc85648}} 
+\index{sc::Timer@{sc::Timer}!stored\_time@{stored\_time}}
+\index{stored\_time@{stored\_time}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{stored\_time}{stored\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::steady\+\_\+clock\+::duration sc\+::\+Timer\+::stored\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_timer_afeb4a40cc0ed2afbe4a0e2e0bf2f67cb}\label{classsc_1_1_timer_afeb4a40cc0ed2afbe4a0e2e0bf2f67cb}} 
+\index{sc::Timer@{sc::Timer}!time\_end@{time\_end}}
+\index{time\_end@{time\_end}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{time\_end}{time\_end}}
+{\footnotesize\ttfamily std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point sc\+::\+Timer\+::time\+\_\+end\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_timer_aa363104760a70b9e4535c9aeda427fb8}\label{classsc_1_1_timer_aa363104760a70b9e4535c9aeda427fb8}} 
+\index{sc::Timer@{sc::Timer}!time\_start@{time\_start}}
+\index{time\_start@{time\_start}!sc::Timer@{sc::Timer}}
+\subsubsection{\texorpdfstring{time\_start}{time\_start}}
+{\footnotesize\ttfamily std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point sc\+::\+Timer\+::time\+\_\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_timer_8h}{Timer.\+h}}\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/src/\mbox{\hyperlink{_timer_8cpp}{Timer.\+cpp}}\end{DoxyCompactItemize}

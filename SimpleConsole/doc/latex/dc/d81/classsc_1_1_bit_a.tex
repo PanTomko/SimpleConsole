@@ -1,0 +1,176 @@
+\hypertarget{classsc_1_1_bit_a}{}\section{sc\+::BitA$<$ T, Path\+Type $>$ Class Template Reference}
+\label{classsc_1_1_bit_a}\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+
+
+{\ttfamily \#include $<$Bit\+A.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_bit_a_ab103e16a25786a4e145a0b469502176b}{populate}} (int znak, short color)
+\begin{DoxyCompactList}\small\item\em Populate whole image with one mark. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsc_1_1_bit_a_ad5e635670ca4015bbf720f35e5996c40}{save}} ()
+\begin{DoxyCompactList}\small\item\em Save open file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsc_1_1_bit_a_af262a95d7f00879e2759f9ef564d9cd9}{load}} (Path\+Type \mbox{\hyperlink{classsc_1_1_bit_a_a64708706afe986a022ec7eee4a75aca5}{path}})
+\begin{DoxyCompactList}\small\item\em Open new .bitA file if not path specified ptrogram will look for file in its directory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc_1_1_bit_a_ae6186444c3c4d4150007ac242691488d}{BitA}} (Path\+Type file\+\_\+path)
+\item 
+\mbox{\hyperlink{classsc_1_1_bit_a_a33f4ad31b4fb529eb91352b9573ebd8a}{BitA}} (Path\+Type file\+\_\+name, unsigned int sizeX, unsigned int sizeY)
+\item 
+\mbox{\hyperlink{classsc_1_1_bit_a_af7f26417ea7ed2f803ad5b3c41bded7a}{$\sim$\+BitA}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classsc_1_1_bit_a_aa384124759ff1305861c8db25217956c}{name}}
+\begin{DoxyCompactList}\small\item\em Name of file. \end{DoxyCompactList}\item 
+Path\+Type \mbox{\hyperlink{classsc_1_1_bit_a_a64708706afe986a022ec7eee4a75aca5}{path}}
+\begin{DoxyCompactList}\small\item\em relative or absolute path to file \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classsc_1_1_bit_a_ae9ada64952c1dd3df063eb63e79651a1}{size\+\_\+x}}
+\item 
+unsigned int \mbox{\hyperlink{classsc_1_1_bit_a_a9309d66c6d75ae9dfda2be5dbfcd4b05}{size\+\_\+y}}
+\item 
+\mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}} $\ast$$\ast$ \mbox{\hyperlink{classsc_1_1_bit_a_abf6254d67d78b69385eb9979bff258af}{marks}}
+\begin{DoxyCompactList}\small\item\em 2d array of marks ( znak + color ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_bit_a_a260a201ed0001e31536b483c06ec05e6}{make\+Marks}} (unsigned int sizeX, unsigned int sizeY)
+\item 
+void \mbox{\hyperlink{classsc_1_1_bit_a_aba89b38422bfd070976920c78152a8e6}{clean}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class Path\+Type = std\+::string$>$\newline
+class sc\+::\+Bit\+A$<$ T, Path\+Type $>$}
+
+\mbox{\hyperlink{classsc_1_1_bit_a}{BitA}} is a handle to .bitA file format. This format consist form numbers, in first line we have two numbers declarating size of file. Then rest will represent \char`\"{}znak color znak color znak color\char`\"{} sume of them would be size\+\_\+x $\ast$ szie\+\_\+y $\ast$ 2 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_bit_a_ae6186444c3c4d4150007ac242691488d}\label{classsc_1_1_bit_a_ae6186444c3c4d4150007ac242691488d}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!BitA@{BitA}}
+\index{BitA@{BitA}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{BitA()}{BitA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+\mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::\mbox{\hyperlink{classsc_1_1_bit_a}{BitA}} (\begin{DoxyParamCaption}\item[{Path\+Type}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_a33f4ad31b4fb529eb91352b9573ebd8a}\label{classsc_1_1_bit_a_a33f4ad31b4fb529eb91352b9573ebd8a}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!BitA@{BitA}}
+\index{BitA@{BitA}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{BitA()}{BitA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+\mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::\mbox{\hyperlink{classsc_1_1_bit_a}{BitA}} (\begin{DoxyParamCaption}\item[{Path\+Type}]{file\+\_\+name,  }\item[{unsigned int}]{sizeX,  }\item[{unsigned int}]{sizeY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_af7f26417ea7ed2f803ad5b3c41bded7a}\label{classsc_1_1_bit_a_af7f26417ea7ed2f803ad5b3c41bded7a}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!````~BitA@{$\sim$BitA}}
+\index{````~BitA@{$\sim$BitA}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{$\sim$BitA()}{~BitA()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+\mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::$\sim$\mbox{\hyperlink{classsc_1_1_bit_a}{BitA}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_bit_a_aba89b38422bfd070976920c78152a8e6}\label{classsc_1_1_bit_a_aba89b38422bfd070976920c78152a8e6}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!clean@{clean}}
+\index{clean@{clean}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+void \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_af262a95d7f00879e2759f9ef564d9cd9}\label{classsc_1_1_bit_a_af262a95d7f00879e2759f9ef564d9cd9}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!load@{load}}
+\index{load@{load}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+bool \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::load (\begin{DoxyParamCaption}\item[{Path\+Type}]{path }\end{DoxyParamCaption})}
+
+
+
+Open new .bitA file if not path specified ptrogram will look for file in its directory. 
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_a260a201ed0001e31536b483c06ec05e6}\label{classsc_1_1_bit_a_a260a201ed0001e31536b483c06ec05e6}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!makeMarks@{makeMarks}}
+\index{makeMarks@{makeMarks}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{makeMarks()}{makeMarks()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+void \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::make\+Marks (\begin{DoxyParamCaption}\item[{unsigned int}]{sizeX,  }\item[{unsigned int}]{sizeY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_ab103e16a25786a4e145a0b469502176b}\label{classsc_1_1_bit_a_ab103e16a25786a4e145a0b469502176b}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!populate@{populate}}
+\index{populate@{populate}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{populate()}{populate()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+void \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::populate (\begin{DoxyParamCaption}\item[{int}]{znak,  }\item[{short}]{color }\end{DoxyParamCaption})}
+
+
+
+Populate whole image with one mark. 
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_ad5e635670ca4015bbf720f35e5996c40}\label{classsc_1_1_bit_a_ad5e635670ca4015bbf720f35e5996c40}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!save@{save}}
+\index{save@{save}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class T , class Path\+Type $>$ \\
+bool \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save open file. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_bit_a_abf6254d67d78b69385eb9979bff258af}\label{classsc_1_1_bit_a_abf6254d67d78b69385eb9979bff258af}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!marks@{marks}}
+\index{marks@{marks}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{marks}{marks}}
+{\footnotesize\ttfamily template$<$class T, class Path\+Type = std\+::string$>$ \\
+\mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}$\ast$$\ast$ \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::marks}
+
+
+
+2d array of marks ( znak + color ) 
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_aa384124759ff1305861c8db25217956c}\label{classsc_1_1_bit_a_aa384124759ff1305861c8db25217956c}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!name@{name}}
+\index{name@{name}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$class T, class Path\+Type = std\+::string$>$ \\
+std\+::string \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::name}
+
+
+
+Name of file. 
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_a64708706afe986a022ec7eee4a75aca5}\label{classsc_1_1_bit_a_a64708706afe986a022ec7eee4a75aca5}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!path@{path}}
+\index{path@{path}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily template$<$class T, class Path\+Type = std\+::string$>$ \\
+Path\+Type \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::path}
+
+
+
+relative or absolute path to file 
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_ae9ada64952c1dd3df063eb63e79651a1}\label{classsc_1_1_bit_a_ae9ada64952c1dd3df063eb63e79651a1}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!size\_x@{size\_x}}
+\index{size\_x@{size\_x}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{size\_x}{size\_x}}
+{\footnotesize\ttfamily template$<$class T, class Path\+Type = std\+::string$>$ \\
+unsigned int \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::size\+\_\+x}
+
+\mbox{\Hypertarget{classsc_1_1_bit_a_a9309d66c6d75ae9dfda2be5dbfcd4b05}\label{classsc_1_1_bit_a_a9309d66c6d75ae9dfda2be5dbfcd4b05}} 
+\index{sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}!size\_y@{size\_y}}
+\index{size\_y@{size\_y}!sc::BitA$<$ T, PathType $>$@{sc::BitA$<$ T, PathType $>$}}
+\subsubsection{\texorpdfstring{size\_y}{size\_y}}
+{\footnotesize\ttfamily template$<$class T, class Path\+Type = std\+::string$>$ \\
+unsigned int \mbox{\hyperlink{classsc_1_1_bit_a}{sc\+::\+BitA}}$<$ \mbox{\hyperlink{_keyboard_event_8h_adf1f3edb9115acb0a1e04209b7a9937b}{T}}, Path\+Type $>$\+::size\+\_\+y}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_bit_a_8h}{Bit\+A.\+h}}\end{DoxyCompactItemize}

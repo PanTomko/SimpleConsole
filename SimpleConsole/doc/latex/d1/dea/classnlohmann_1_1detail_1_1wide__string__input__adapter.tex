@@ -1,0 +1,136 @@
+\hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter}{}\section{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$ Class Template Reference}
+\label{classnlohmann_1_1detail_1_1wide__string__input__adapter}\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+Inheritance diagram for nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/dea/classnlohmann_1_1detail_1_1wide__string__input__adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}{wide\+\_\+string\+\_\+input\+\_\+adapter}} (const Wide\+String\+Type \&w) noexcept
+\item 
+std\+::char\+\_\+traits$<$ char $>$\+::int\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}{get\+\_\+character}} () noexcept override
+\begin{DoxyCompactList}\small\item\em get a character \mbox{[}0,255\mbox{]} or std\+::char\+\_\+traits$<$char$>$\+::eof(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t T$>$ }\\\mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_ab718e44c524fa7ec74b0a0ae1ad64ca4}{fill\+\_\+buffer}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Wide\+String\+Type \& \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a30fcb522f072d58eb0fb52cfb784e9c9}{str}}
+\begin{DoxyCompactList}\small\item\em the wstring to process \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a196fe1fb07310dc8c2ca3a0a9ef9b27a}{current\+\_\+wchar}} = 0
+\begin{DoxyCompactList}\small\item\em index of the current wchar in str \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5}{std\+::array}}$<$ std\+::char\+\_\+traits$<$ char $>$\+::int\+\_\+type, 4 $>$ \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_af0854ae66725357d074912379a235128}{utf8\+\_\+bytes}} = \{\{0, 0, 0, 0\}\}
+\begin{DoxyCompactList}\small\item\em a buffer for U\+T\+F-\/8 bytes \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a6d87bc3e8b427e06cda936383283e0c4}{utf8\+\_\+bytes\+\_\+index}} = 0
+\begin{DoxyCompactList}\small\item\em index to the utf8\+\_\+codes array for the next valid byte \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a9fc33bf0974526336e53ea530c7097ff}{utf8\+\_\+bytes\+\_\+filled}} = 0
+\begin{DoxyCompactList}\small\item\em number of valid bytes in the utf8\+\_\+codes array \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!wide\_string\_input\_adapter@{wide\_string\_input\_adapter}}
+\index{wide\_string\_input\_adapter@{wide\_string\_input\_adapter}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{wide\_string\_input\_adapter()}{wide\_string\_input\_adapter()}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{wide\+\_\+string\+\_\+input\+\_\+adapter}} (\begin{DoxyParamCaption}\item[{const Wide\+String\+Type \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_ab718e44c524fa7ec74b0a0ae1ad64ca4}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_ab718e44c524fa7ec74b0a0ae1ad64ca4}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!fill\_buffer@{fill\_buffer}}
+\index{fill\_buffer@{fill\_buffer}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{fill\_buffer()}{fill\_buffer()}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+template$<$size\+\_\+t T$>$ \\
+\mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::fill\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!get\_character@{get\_character}}
+\index{get\_character@{get\_character}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{get\_character()}{get\_character()}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+std\+::char\+\_\+traits$<$char$>$\+::int\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::get\+\_\+character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+get a character \mbox{[}0,255\mbox{]} or std\+::char\+\_\+traits$<$char$>$\+::eof(). 
+
+
+
+Implements \mbox{\hyperlink{structnlohmann_1_1detail_1_1input__adapter__protocol_aac10a6a4048a8ce8e2ed50277692a3ca}{nlohmann\+::detail\+::input\+\_\+adapter\+\_\+protocol}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a196fe1fb07310dc8c2ca3a0a9ef9b27a}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a196fe1fb07310dc8c2ca3a0a9ef9b27a}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!current\_wchar@{current\_wchar}}
+\index{current\_wchar@{current\_wchar}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{current\_wchar}{current\_wchar}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::current\+\_\+wchar = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+index of the current wchar in str 
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a30fcb522f072d58eb0fb52cfb784e9c9}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a30fcb522f072d58eb0fb52cfb784e9c9}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!str@{str}}
+\index{str@{str}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+const Wide\+String\+Type\& \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::str\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the wstring to process 
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_af0854ae66725357d074912379a235128}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_af0854ae66725357d074912379a235128}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!utf8\_bytes@{utf8\_bytes}}
+\index{utf8\_bytes@{utf8\_bytes}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{utf8\_bytes}{utf8\_bytes}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+\mbox{\hyperlink{namespacenlohmann_1_1detail_a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5}{std\+::array}}$<$std\+::char\+\_\+traits$<$char$>$\+::int\+\_\+type, 4$>$ \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::utf8\+\_\+bytes = \{\{0, 0, 0, 0\}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+a buffer for U\+T\+F-\/8 bytes 
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a9fc33bf0974526336e53ea530c7097ff}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a9fc33bf0974526336e53ea530c7097ff}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!utf8\_bytes\_filled@{utf8\_bytes\_filled}}
+\index{utf8\_bytes\_filled@{utf8\_bytes\_filled}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{utf8\_bytes\_filled}{utf8\_bytes\_filled}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::utf8\+\_\+bytes\+\_\+filled = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of valid bytes in the utf8\+\_\+codes array 
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a6d87bc3e8b427e06cda936383283e0c4}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a6d87bc3e8b427e06cda936383283e0c4}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!utf8\_bytes\_index@{utf8\_bytes\_index}}
+\index{utf8\_bytes\_index@{utf8\_bytes\_index}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{utf8\_bytes\_index}{utf8\_bytes\_index}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::utf8\+\_\+bytes\+\_\+index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+index to the utf8\+\_\+codes array for the next valid byte 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{json_8hpp}{json.\+hpp}}\end{DoxyCompactItemize}

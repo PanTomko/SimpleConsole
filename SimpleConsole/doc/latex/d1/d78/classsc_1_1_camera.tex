@@ -1,0 +1,90 @@
+\hypertarget{classsc_1_1_camera}{}\section{sc\+::Camera Class Reference}
+\label{classsc_1_1_camera}\index{sc::Camera@{sc::Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsc_1_1_camera_a11435e666d8d36637823263b1d494ffb}{is\+Centred}} (bool flag)
+\begin{DoxyCompactList}\small\item\em it will make camera possition start from it center if true else form top left corrners \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsc_1_1_camera_a6b737853f54514a30700f4ff27433995}{is\+In\+View}} (const \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \&vector)
+\item 
+\mbox{\hyperlink{classsc_1_1_camera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\item 
+\mbox{\hyperlink{classsc_1_1_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_camera_a521be7f945f1d565e766162f39aa99ab}{possition}}
+\item 
+\mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \mbox{\hyperlink{classsc_1_1_camera_a1f87bf4e63d05ca2e86ac4acf4d01671}{camera\+\_\+size}}
+\item 
+bool \mbox{\hyperlink{classsc_1_1_camera_a2d6647a30a10807d10d75a165b73b844}{centred}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classsc_1_1_camera}{Camera}} can be set for console to set what will be drow on console. Intendet for scrollling, game view, etc. To it to work you need to set it form sc\+::\+Console\+::set\+Camera(\+Camera $\ast$const cam) function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc_1_1_camera_a01f94c3543f56ede7af49dc778f19331}\label{classsc_1_1_camera_a01f94c3543f56ede7af49dc778f19331}} 
+\index{sc::Camera@{sc::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsc_1_1_camera_ad1897942d0ccf91052386388a497349f}\label{classsc_1_1_camera_ad1897942d0ccf91052386388a497349f}} 
+\index{sc::Camera@{sc::Camera}!````~Camera@{$\sim$Camera}}
+\index{````~Camera@{$\sim$Camera}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{$\sim$Camera()}{~Camera()}}
+{\footnotesize\ttfamily Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc_1_1_camera_a11435e666d8d36637823263b1d494ffb}\label{classsc_1_1_camera_a11435e666d8d36637823263b1d494ffb}} 
+\index{sc::Camera@{sc::Camera}!isCentred@{isCentred}}
+\index{isCentred@{isCentred}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{isCentred()}{isCentred()}}
+{\footnotesize\ttfamily void Camera\+::is\+Centred (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+it will make camera possition start from it center if true else form top left corrners 
+
+\mbox{\Hypertarget{classsc_1_1_camera_a6b737853f54514a30700f4ff27433995}\label{classsc_1_1_camera_a6b737853f54514a30700f4ff27433995}} 
+\index{sc::Camera@{sc::Camera}!isInView@{isInView}}
+\index{isInView@{isInView}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{isInView()}{isInView()}}
+{\footnotesize\ttfamily bool Camera\+::is\+In\+View (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} \&}]{vector }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc_1_1_camera_a1f87bf4e63d05ca2e86ac4acf4d01671}\label{classsc_1_1_camera_a1f87bf4e63d05ca2e86ac4acf4d01671}} 
+\index{sc::Camera@{sc::Camera}!camera\_size@{camera\_size}}
+\index{camera\_size@{camera\_size}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{camera\_size}{camera\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} sc\+::\+Camera\+::camera\+\_\+size}
+
+\mbox{\Hypertarget{classsc_1_1_camera_a2d6647a30a10807d10d75a165b73b844}\label{classsc_1_1_camera_a2d6647a30a10807d10d75a165b73b844}} 
+\index{sc::Camera@{sc::Camera}!centred@{centred}}
+\index{centred@{centred}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{centred}{centred}}
+{\footnotesize\ttfamily bool sc\+::\+Camera\+::centred}
+
+\mbox{\Hypertarget{classsc_1_1_camera_a521be7f945f1d565e766162f39aa99ab}\label{classsc_1_1_camera_a521be7f945f1d565e766162f39aa99ab}} 
+\index{sc::Camera@{sc::Camera}!possition@{possition}}
+\index{possition@{possition}!sc::Camera@{sc::Camera}}
+\subsubsection{\texorpdfstring{possition}{possition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc_1_1_vector2_d}{Vector2D}} sc\+::\+Camera\+::possition}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/include/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\item 
+C\+:/\+Users/\+Pan Tomko/\+Desktop/\+Projects/\+Simple\+Console/\+Simple\+Console/src/\mbox{\hyperlink{_camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}
