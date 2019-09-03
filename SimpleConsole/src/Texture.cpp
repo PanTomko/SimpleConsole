@@ -41,17 +41,17 @@ void Texture::fill(wchar_t c, WORD at) {
 	}
 }
 
-void sc::Texture::setCharAt(const Vector2D & posssition, const char & c) {
+inline void sc::Texture::setCharAt(const Vector2D & posssition, const char & c) {
 	if( c != 0)
 		marks[posssition.x + posssition.y * texture_size.x].Char.AsciiChar = c;
 }
 
-void sc::Texture::setCharAt(const Vector2D & posssition, const wchar_t & c) {
+inline void sc::Texture::setCharAt(const Vector2D & posssition, const wchar_t & c) {
 	if (c != 0)
 		marks[posssition.x + posssition.y * texture_size.x].Char.UnicodeChar = c;
 }
 
-void sc::Texture::setAttrAt(const Vector2D & posssition, const WORD & attribute) {
+inline void sc::Texture::setAttrAt(const Vector2D & posssition, const WORD & attribute) {
 	if (attribute != 0)
 		marks[posssition.x + posssition.y * texture_size.x].Attributes = attribute;
 }

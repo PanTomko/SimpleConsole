@@ -23,10 +23,10 @@ namespace sc
 		/// fills texture with wchar_t and at
 		void fill(wchar_t, WORD at);
 
-		void setCharAt( const Vector2D & posssition, const char & c );
-		void setCharAt( const Vector2D & posssition, const wchar_t & c);
+		inline void setCharAt( const Vector2D & posssition, const char & c );
+		inline void setCharAt( const Vector2D & posssition, const wchar_t & c);
 		
-		void setAttrAt( const Vector2D & posssition, const WORD & attribute);
+		inline void setAttrAt( const Vector2D & posssition, const WORD & attribute);
 
 		Texture();
 		~Texture();
