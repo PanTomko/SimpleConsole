@@ -6,6 +6,7 @@
 #include "Camera.h"
 #include "BitA.h"
 #include "Texture.h"
+#include "EventObserver.h"
 
 #include <windows.h>
 #include <string>
@@ -21,16 +22,24 @@ namespace sc
 	class DllExport Console : public ConsoleModuleEvent {
 	public:
 
+		sc::EventObserver<sc::Vector2D> ev_buffer_resize;
+		sc::EventObserver<sc::Vector2D> ev_console_resize;
+		
+		sc::EventObserver<std::wstring> ev_title_change;
+		sc::EventObserver<std::wstring> ev_font_family_change;
+
+		sc::EventObserver<unsigned int> ev_font_size_change;
+
 		/// final resul that will be draw to console buffer ( the one that is not visible )
 		Texture buffer_texture;
-
-		void setFontSize(int size);
 
 		/// sets console title
 		void setTitle( std::wstring title);
 
 		///
 		void setFontFamily(std::wstring family);
+
+		void setFontSize(unsigned int size);
 
 		/// enable unicode encoding utf_8 ( if u do that u cant use cout insted use wcout etc. )
 		void enableUnicodeEncoding();
@@ -75,11 +84,13 @@ namespace sc
 		void draw(const BitA<Mark>& img, Vector2D possition, Vector2D start = {0,0}, Vector2D end = { 0,0 });
 
 		/// sets console size
-		void setConsoleSize(Vector2D size);
+		Vector2D setConsoleSize(const Vector2D & size);
 		SMALL_RECT getConsoleSize();
+		COORD getLargestConsoleSize();
+
 
 		/// sets buffer size. first use void setConsoleSize(Vector2D size); to match console size
-		void setBufferSize(Vector2D size);
+		Vector2D setBufferSize(const Vector2D & size);
 		Vector2D getBufferSize();
 
 		Console(Vector2D size, int font_size);
@@ -100,6 +111,8 @@ namespace sc
 
 		SMALL_RECT console_size;
 		Vector2D buffer_size;
+
+		CONSOLE_FONT_INFOEX font;
 	};
 }
 

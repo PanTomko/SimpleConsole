@@ -1,8 +1,6 @@
 ﻿#include "Console.h"
 
 // Macro for _setmode
-
-
 #include <io.h>
 #include <fcntl.h>
 
@@ -32,24 +30,7 @@ Console::Console(Vector2D size, int font_size) {
 		CONSOLE_TEXTMODE_BUFFER,
 		NULL
 	);
-	/*
-	SetConsoleMode(console_buffer_one,
-		ENABLE_WINDOW_INPUT |
-		ENABLE_MOUSE_INPUT |
-		ENABLE_VIRTUAL_TERMINAL_PROCESSING
-	);
 
-	SetConsoleMode(console_buffer_two,
-		ENABLE_WINDOW_INPUT |
-		ENABLE_MOUSE_INPUT |
-		ENABLE_VIRTUAL_TERMINAL_PROCESSING
-	);
-	*/
-
-	setConsoleSize(size);
-	setBufferSize(size);
-	
-	CONSOLE_FONT_INFOEX font;
 	GetCurrentConsoleFontEx(console_buffer_one, false, &font);
 
 	font.cbSize = sizeof(font);
@@ -63,6 +44,9 @@ Console::Console(Vector2D size, int font_size) {
 
 	SetCurrentConsoleFontEx(console_buffer_one, false, &font);
 	SetCurrentConsoleFontEx(console_buffer_two, false, &font);
+
+	setBufferSize(size);
+	setConsoleSize(size);
 	
 	SetConsoleActiveScreenBuffer(console_buffer_one);	// show this buffer
 	console_active_buffer = &console_buffer_two;
@@ -85,32 +69,28 @@ Console::Console(Vector2D size, int font_size) {
 
 Console::~Console() {}
 
-void Console::setFontSize(int size) {
-	CONSOLE_FONT_INFOEX font;
-	GetCurrentConsoleFontEx(console_buffer_one, false, &font);
-
-	font.cbSize = sizeof(font);
-	font.dwFontSize.X = 0;
-	font.dwFontSize.Y = size;
-
-	SetCurrentConsoleFontEx(console_buffer_one, false, &font);
-	SetCurrentConsoleFontEx(console_buffer_two, false, &font);
-}
-
 void Console::setTitle(std::wstring title) {
 	SetConsoleTitle(title.c_str());
+	ev_title_change.notify(title);
 }
 
 void Console::setFontFamily(std::wstring family) {
-	CONSOLE_FONT_INFOEX font;
-	GetCurrentConsoleFontEx(console_buffer_one, false, &font);
-	
 	font.FontFamily = FF_DONTCARE;
-	font.FontWeight = FW_NORMAL;
 	wcscpy(font.FaceName, family.c_str());
 
 	SetCurrentConsoleFontEx(console_buffer_one, false, &font);
 	SetCurrentConsoleFontEx(console_buffer_two, false, &font);
+
+	ev_font_family_change.notify(family);
+}
+
+void sc::Console::setFontSize(unsigned int size) {
+	font.dwFontSize.X = 0;
+	font.dwFontSize.Y = size;
+	SetCurrentConsoleFontEx(console_buffer_one, false, &font);
+	SetCurrentConsoleFontEx(console_buffer_two, false, &font);
+
+	ev_font_size_change.notify(size);
 }
 
 void Console::enableUnicodeEncoding() {
@@ -219,21 +199,35 @@ void Console::setCameraActive(bool flag) {
 	is_camera_active = flag;
 }
 
-void Console::setConsoleSize(Vector2D size) {
-	console_size = { 0, 0, (short)size.x - 1, (short)size.y - 1 };
-	SetConsoleWindowInfo(console_buffer_one, TRUE, &console_size);
-	SetConsoleWindowInfo(console_buffer_two, TRUE, &console_size);
-}
+
 
 SMALL_RECT Console::getConsoleSize() {
 	return console_size;
 }
 
-void Console::setBufferSize(Vector2D size) {
+COORD sc::Console::getLargestConsoleSize() {
+
+	return COORD(GetLargestConsoleWindowSize(*console_active_buffer));
+}
+
+Vector2D Console::setBufferSize(const Vector2D & size) {
 	buffer_size = size;
-	SetConsoleScreenBufferSize(console_buffer_one, buffer_size);
-	SetConsoleScreenBufferSize(console_buffer_two, buffer_size);
+	SetConsoleScreenBufferSize(console_buffer_one, size);
+	SetConsoleScreenBufferSize(console_buffer_two, size);
 	buffer_texture.setTextureSize(size);
+	ev_buffer_resize.notify(size);
+	return size;
+}
+
+Vector2D Console::setConsoleSize(const Vector2D & size) {
+
+	console_size = { 0, 0, (short)size.x - 1, (short)size.y - 1 };
+
+	SetConsoleWindowInfo(console_buffer_one, TRUE, &console_size);
+	SetConsoleWindowInfo(console_buffer_two, TRUE, &console_size);
+
+	ev_console_resize.notify(size);
+	return size;
 }
 
 Vector2D Console::getBufferSize() {

@@ -61,13 +61,6 @@ Vector2D::operator COORD&() const {
 	return cor;
 }
 
-Vector2D::operator COORD && () {
-	COORD cor;
-	cor.X = static_cast<short>(x);
-	cor.Y = static_cast<short>(y);
-	return std::move(cor);
-}
-
 
 
 

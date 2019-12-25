@@ -14,7 +14,6 @@ namespace sc
 		Vector2D relativeTo(const Vector2D & vector);
 
 		operator COORD & ()const;
-		operator COORD &&();
 		Vector2D operator=(Vector2D const& vec);
 		Vector2D operator=(COORD const& cor);
 		Vector2D operator+(Vector2D const& vec);
